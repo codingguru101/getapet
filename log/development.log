@@ -1,0 +1,2213 @@
+Started GET "/" for 127.0.0.1 at 2017-09-08 19:37:16 -0400
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pets" for 127.0.0.1 at 2017-09-08 19:39:31 -0400
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreatePets (20170908223601)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "pets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "species" varchar, "color" varchar, "image_url" varchar, "age_in_months" integer, "description" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170908223601"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-09-08 23:40:27.797910"], ["updated_at", "2017-09-08 23:40:27.797910"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/pets" for 127.0.0.1 at 2017-09-08 19:40:44 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 2119ms (Views: 2101.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-08 19:40:55 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (74.4ms)
+  Rendered pets/new.html.erb within layouts/application (81.3ms)
+Completed 200 OK in 185ms (Views: 132.2ms | ActiveRecord: 6.1ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-08 19:43:45 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Srjipwxd7AQiC2dtFoucNd+FSYKbjG/eWO2n7+dK+zz3/nFgsIYibYBucHdrYHY+xD9HVgyeuTFbR5xhHt4VxA==", "pet"=>{"name"=>"Pat", "species"=>"Cat", "color"=>"Grey", "image_url"=>"http://www.caaws.org/wp-content/uploads/2017/03/pat-the-cat-e1488716652150.jpg", "age_in_months"=>"35", "description"=>"Black face, grey body."}, "commit"=>"Create Pet"}
+  [1m[35m (9.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pat"], ["species", "Cat"], ["color", "Grey"], ["image_url", "http://www.caaws.org/wp-content/uploads/2017/03/pat-the-cat-e1488716652150.jpg"], ["age_in_months", 35], ["description", "Black face, grey body."], ["created_at", "2017-09-08 23:43:45.854890"], ["updated_at", "2017-09-08 23:43:45.854890"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/1
+Completed 302 Found in 52ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-09-08 19:43:45 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 128ms (Views: 108.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-08 21:42:54 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (42.2ms)
+Completed 200 OK in 213ms (Views: 191.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/pictures/2" for 127.0.0.1 at 2017-09-08 21:56:28 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pictures/2"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pictures" for 127.0.0.1 at 2017-09-08 21:56:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pictures"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pictures" for 127.0.0.1 at 2017-09-08 21:56:38 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pictures"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pictures/new" for 127.0.0.1 at 2017-09-08 21:56:40 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pictures/new"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pictures/new" for 127.0.0.1 at 2017-09-08 21:56:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/pictures/new"):
+  
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/pets/1" for 127.0.0.1 at 2017-09-08 21:58:36 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (1.5ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 57ms (Views: 43.7ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-08 22:47:01 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (28.7ms)
+  Rendered pets/new.html.erb within layouts/application (43.1ms)
+Completed 200 OK in 133ms (Views: 97.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-08 22:47:07 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (7.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 85ms (Views: 69.2ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-09-08 22:47:11 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (3.5ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 40.7ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:46:55 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 404ms (Views: 384.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:46:59 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (50.1ms)
+  Rendered pets/new.html.erb within layouts/application (55.4ms)
+Completed 200 OK in 88ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:48:22 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OKOKfxglK6pLpqZP/vbjVM6ZdjdPzCxNs5Vg7Gbjv3OF5Rm4pP7lw+nDsVWDHQlf1SN449je+qKwP1tin3dRiw==", "pet"=>{"name"=>"Rosie", "species"=>"Dog", "color"=>"White/Tan", "image_url"=>"http://www.caaws.org/wp-content/uploads/2017/05/thumbnail_rosie2-e1495672219950-300x300.jpg", "age_in_months"=>"26", "description"=>""}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rosie"], ["species", "Dog"], ["color", "White/Tan"], ["image_url", "http://www.caaws.org/wp-content/uploads/2017/05/thumbnail_rosie2-e1495672219950-300x300.jpg"], ["age_in_months", 26], ["description", ""], ["created_at", "2017-09-09 14:48:22.482772"], ["updated_at", "2017-09-09 14:48:22.482772"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/2
+Completed 302 Found in 23ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-09-09 10:48:22 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 86ms (Views: 75.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets/2/edit" for 127.0.0.1 at 2017-09-09 10:48:34 -0400
+Processing by PetsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/edit.html.erb within layouts/application
+  Rendered pets/_form.html.erb (10.7ms)
+  Rendered pets/edit.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 81ms (Views: 74.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/pets/2" for 127.0.0.1 at 2017-09-09 10:48:42 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MJqOqtwaMcPSZhm/XDSPGpXKd5Z/ywix8kfKGXNvhzYEgfLnjahCPUONgcTHIyLdcKyDkr+KuPI2oPyI2XBnBA==", "pet"=>{"name"=>"Rosie", "species"=>"Dog", "color"=>"White/Tan", "image_url"=>"http://www.caaws.org/wp-content/uploads/2017/05/thumbnail_rosie2-e1495672219950-300x300.jpg", "age_in_months"=>"26", "description"=>"Loves people."}, "commit"=>"Update Pet", "id"=>"2"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[33mUPDATE "pets" SET "description" = ?, "updated_at" = ? WHERE "pets"."id" = ?[0m  [["description", "Loves people."], ["updated_at", "2017-09-09 14:48:42.785243"], ["id", 2]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/2
+Completed 302 Found in 14ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-09-09 10:48:42 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 72ms (Views: 66.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:48:52 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:48:58 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (7.6ms)
+  Rendered pets/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 61ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:50:13 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KsRBKryLSr6+qKsEXZC5AUFefQOKPGwmUpbrMs4PhweXgtLtAFCE1xzNvB4ge1MKWuRz1x0uuslRPNC8N5tp/w==", "pet"=>{"name"=>"Rex", "species"=>"Cat", "color"=>"Black/Tan/White", "image_url"=>"http://www.wnynetworks.net/~heartfor//adoptable_photos/r_0606150328_1.jpg", "age_in_months"=>"12", "description"=>"Cuddly and loyal."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rex"], ["species", "Cat"], ["color", "Black/Tan/White"], ["image_url", "http://www.wnynetworks.net/~heartfor//adoptable_photos/r_0606150328_1.jpg"], ["age_in_months", 12], ["description", "Cuddly and loyal."], ["created_at", "2017-09-09 14:50:13.236342"], ["updated_at", "2017-09-09 14:50:13.236342"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/3
+Completed 302 Found in 9ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/pets/3" for 127.0.0.1 at 2017-09-09 10:50:13 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 33.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:50:16 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 78ms (Views: 64.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:50:31 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (9.1ms)
+  Rendered pets/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 52ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:51:30 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SkZNgU4yoJkd2rsth/o5mUrpSAMgynQLYjbkz25yH1T3AN5G8ulu8L+/rDf6EdOSUVNG17fYouRhnN9Bl+bxrA==", "pet"=>{"name"=>"Pinky", "species"=>"Dog", "color"=>"Tan/White", "image_url"=>"https://static1.squarespace.com/static/57589331f8baf360886e43ab/576afc2e414fb5f6a4ba39f2/576afc409f7456da7992157d/1466629768487/IMG_5551.jpeg?format=300w", "age_in_months"=>"4", "description"=>"Likes to play fetch."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pinky"], ["species", "Dog"], ["color", "Tan/White"], ["image_url", "https://static1.squarespace.com/static/57589331f8baf360886e43ab/576afc2e414fb5f6a4ba39f2/576afc409f7456da7992157d/1466629768487/IMG_5551.jpeg?format=300w"], ["age_in_months", 4], ["description", "Likes to play fetch."], ["created_at", "2017-09-09 14:51:30.347947"], ["updated_at", "2017-09-09 14:51:30.347947"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/4
+Completed 302 Found in 13ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/pets/4" for 127.0.0.1 at 2017-09-09 10:51:30 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 34.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:51:33 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:51:41 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.1ms)
+  Rendered pets/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 54ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:53:26 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HsNnL4sN2+x8AlPzdxL8qMWgR96Xw0Oa5zHmNsRUVuujhfToN9YVhd5nROkK+Raj3hpJCgDRlXXkm924PcC4Ew==", "pet"=>{"name"=>"Sprinkle", "species"=>"Cat", "color"=>"Black/Tan/White", "image_url"=>"http://www.wnynetworks.net/~heartfor//adoptable_photos/r_0128140450_1.jpg", "age_in_months"=>"7", "description"=>"Catches mice."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sprinkle"], ["species", "Cat"], ["color", "Black/Tan/White"], ["image_url", "http://www.wnynetworks.net/~heartfor//adoptable_photos/r_0128140450_1.jpg"], ["age_in_months", 7], ["description", "Catches mice."], ["created_at", "2017-09-09 14:53:26.555480"], ["updated_at", "2017-09-09 14:53:26.555480"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/5
+Completed 302 Found in 10ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/pets/5" for 127.0.0.1 at 2017-09-09 10:53:26 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 35.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:53:29 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 43ms (Views: 37.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:53:31 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (16.8ms)
+  Rendered pets/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 73ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:55:03 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m9P966IWw/ceC/Cs/5k9pb9nBzue0vAxZFQZ1KkeMgwmlW4sHs0Nnrxu57aCcteupN0J7wnAJt5n/iJaUIrc9A==", "pet"=>{"name"=>"Rover", "species"=>"Dog", "color"=>"Grey", "image_url"=>"http://4.bp.blogspot.com/-GsDkrDhT9Ug/T-yQwNMkF5I/AAAAAAAAD_Y/oEvjB0MMh8M/s400/pointer1.jpg", "age_in_months"=>"30", "description"=>"Sometimes brings gifts home."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rover"], ["species", "Dog"], ["color", "Grey"], ["image_url", "http://4.bp.blogspot.com/-GsDkrDhT9Ug/T-yQwNMkF5I/AAAAAAAAD_Y/oEvjB0MMh8M/s400/pointer1.jpg"], ["age_in_months", 30], ["description", "Sometimes brings gifts home."], ["created_at", "2017-09-09 14:55:03.718602"], ["updated_at", "2017-09-09 14:55:03.718602"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/6
+Completed 302 Found in 8ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/pets/6" for 127.0.0.1 at 2017-09-09 10:55:03 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/6/edit" for 127.0.0.1 at 2017-09-09 10:55:09 -0400
+Processing by PetsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering pets/edit.html.erb within layouts/application
+  Rendered pets/_form.html.erb (11.3ms)
+  Rendered pets/edit.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 106ms (Views: 97.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/pets/6" for 127.0.0.1 at 2017-09-09 10:55:18 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1cJeeL9HXyQhxpDmHNgiwPr03x2TBfG6bdLte5H7DCEW2HrJpKL67+aL8BNw9x5zW0muUSM7leWC9hpJyhNhqw==", "pet"=>{"name"=>"Rover", "species"=>"Dog", "color"=>"Grey", "image_url"=>"http://4.bp.blogspot.com/-GsDkrDhT9Ug/T-yQwNMkF5I/AAAAAAAAD_Y/oEvjB0MMh8M/s400/pointer1.jpg", "age_in_months"=>"30", "description"=>"Known to bring gifts home."}, "commit"=>"Update Pet", "id"=>"6"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "pets" SET "description" = ?, "updated_at" = ? WHERE "pets"."id" = ?[0m  [["description", "Known to bring gifts home."], ["updated_at", "2017-09-09 14:55:18.596781"], ["id", 6]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/6
+Completed 302 Found in 13ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/pets/6" for 127.0.0.1 at 2017-09-09 10:55:18 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 73ms (Views: 64.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:55:20 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 57ms (Views: 50.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:55:21 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (9.9ms)
+  Rendered pets/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 67ms (Views: 62.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:56:07 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aVWwZJSiGfFKKavdA3Xf96gsK44o+k/Zsaq5eyeiMsrUEyOjKHnXmOhMvMd+njX8s5YlWr/omTayAIL13jbcMg==", "pet"=>{"name"=>"Norris", "species"=>"Cat", "color"=>"Orange", "image_url"=>"http://www.caaws.org/wp-content/uploads/2017/05/norris2-300x300.jpg", "age_in_months"=>"9", "description"=>"Rescue cat looking for a family."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Norris"], ["species", "Cat"], ["color", "Orange"], ["image_url", "http://www.caaws.org/wp-content/uploads/2017/05/norris2-300x300.jpg"], ["age_in_months", 9], ["description", "Rescue cat looking for a family."], ["created_at", "2017-09-09 14:56:07.889644"], ["updated_at", "2017-09-09 14:56:07.889644"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/7
+Completed 302 Found in 10ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/pets/7" for 127.0.0.1 at 2017-09-09 10:56:07 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 40ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:56:09 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 47ms (Views: 43.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:56:29 -0400
+Processing by PetsController#new as HTML
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:56:29 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (11.8ms)
+  Rendered pets/new.html.erb within layouts/application (22.8ms)
+  Rendering pets/new.html.erb within layouts/application
+Completed 200 OK in 78ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+  Rendered pets/_form.html.erb (3.5ms)
+  Rendered pets/new.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 92ms (Views: 85.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:56:58 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z/29xiltuz6e+utIm8joMJyTYauVFVVgNVEhmPGgcMXauy4BlbZ1Vzyf/FLmIwI7hylvfwIHg482+xoWCDSePQ==", "pet"=>{"name"=>"Arroyo", "species"=>"Dog", "color"=>"White/Tan", "image_url"=>"http://suindependent.com/wp-content/uploads/2017/07/Arroyo-1.jpg", "age_in_months"=>"4", "description"=>"Happy and healthy dog."}, "commit"=>"Create Pet"}
+  [1m[35m (8.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Arroyo"], ["species", "Dog"], ["color", "White/Tan"], ["image_url", "http://suindependent.com/wp-content/uploads/2017/07/Arroyo-1.jpg"], ["age_in_months", 4], ["description", "Happy and healthy dog."], ["created_at", "2017-09-09 14:56:58.098570"], ["updated_at", "2017-09-09 14:56:58.098570"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/8
+Completed 302 Found in 30ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/pets/8" for 127.0.0.1 at 2017-09-09 10:56:58 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:57:05 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 52ms (Views: 47.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:57:14 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.5ms)
+  Rendered pets/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 46ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:57:47 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TNyLPT5Ef0myGcCL8vKI+P+XQn3aui6NdARf2a2yQt7xmhj6gp+xIBB815GPGWLz5C1MqU2o+GJ3rmRXVCasJg==", "pet"=>{"name"=>"Zia", "species"=>"Cat", "color"=>"White/Tan", "image_url"=>"http://www.caaws.org/wp-content/uploads/2016/08/zia-1-300x300.jpg", "age_in_months"=>"28", "description"=>"Enjoys a good book."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Zia"], ["species", "Cat"], ["color", "White/Tan"], ["image_url", "http://www.caaws.org/wp-content/uploads/2016/08/zia-1-300x300.jpg"], ["age_in_months", 28], ["description", "Enjoys a good book."], ["created_at", "2017-09-09 14:57:47.799967"], ["updated_at", "2017-09-09 14:57:47.799967"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/9
+Completed 302 Found in 13ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pets/9" for 127.0.0.1 at 2017-09-09 10:57:47 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 36.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:57:54 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 54ms (Views: 49.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:58:10 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (9.4ms)
+  Rendered pets/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 77ms (Views: 70.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:58:35 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"js/iykhUL2sTibDDmYWo6QKtwgcnL1uNTi87vVWeJo8ziXEN9I/hArHsp9nkbkLiGRfM07A9jWJNhQAzrArIdw==", "pet"=>{"name"=>"Draper", "species"=>"Dog", "color"=>"White", "image_url"=>"http://www.caaws.org/wp-content/uploads/2017/05/Draper3-e1494641108487-300x300.jpg", "age_in_months"=>"8", "description"=>"Gives lots of kisses."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Draper"], ["species", "Dog"], ["color", "White"], ["image_url", "http://www.caaws.org/wp-content/uploads/2017/05/Draper3-e1494641108487-300x300.jpg"], ["age_in_months", 8], ["description", "Gives lots of kisses."], ["created_at", "2017-09-09 14:58:35.308998"], ["updated_at", "2017-09-09 14:58:35.308998"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/10
+Completed 302 Found in 12ms (ActiveRecord: 5.8ms)
+
+
+Started GET "/pets/10" for 127.0.0.1 at 2017-09-09 10:58:35 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:58:40 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:58:41 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (10.8ms)
+  Rendered pets/new.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 64ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 10:59:29 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gHXOJtT1XbuSHLGoBJzWBBXhPLOSd6B2D8aKxnYCYHs9M13haC6T0jB5prJ5dzwPDlsyZwVldpkMbLFIj5aOgw==", "pet"=>{"name"=>"Francine", "species"=>"Cat", "color"=>"Black", "image_url"=>"http://www.caaws.org/wp-content/uploads/2016/08/francine-1-300x300.jpg", "age_in_months"=>"30", "description"=>"She looks into your soul."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Francine"], ["species", "Cat"], ["color", "Black"], ["image_url", "http://www.caaws.org/wp-content/uploads/2016/08/francine-1-300x300.jpg"], ["age_in_months", 30], ["description", "She looks into your soul."], ["created_at", "2017-09-09 14:59:29.276879"], ["updated_at", "2017-09-09 14:59:29.276879"]]
+  [1m[35m (3.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/11
+Completed 302 Found in 11ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/pets/11" for 127.0.0.1 at 2017-09-09 10:59:29 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 40ms (Views: 36.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 10:59:32 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 44ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 10:59:35 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (4.9ms)
+  Rendered pets/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:00:43 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AsJ1kZDidD1LG/rqh6N016R/3HGIhn40G076ICGgS7q/hOZWLDm6VOl+7fD6SJ7cv8XSpR+UqNsY5MGu2DSlQg==", "pet"=>{"name"=>"Cutie", "species"=>"Dog", "color"=>"White/Tan", "image_url"=>"https://i.pinimg.com/736x/3a/53/4b/3a534b12d907bc3b92d2cfa6c9763181--pet-shelter-shelters.jpg", "age_in_months"=>"8", "description"=>"Lap dog, abused, needs a loving home."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Cutie"], ["species", "Dog"], ["color", "White/Tan"], ["image_url", "https://i.pinimg.com/736x/3a/53/4b/3a534b12d907bc3b92d2cfa6c9763181--pet-shelter-shelters.jpg"], ["age_in_months", 8], ["description", "Lap dog, abused, needs a loving home."], ["created_at", "2017-09-09 15:00:43.825436"], ["updated_at", "2017-09-09 15:00:43.825436"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/12
+Completed 302 Found in 7ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/pets/12" for 127.0.0.1 at 2017-09-09 11:00:43 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 32.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:00:49 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 49ms (Views: 40.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:01:01 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (5.1ms)
+  Rendered pets/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 48ms (Views: 45.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:02:24 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ezJiZ2mSX1zz6GwbpF9AFWabmnLF/9ii7BIp09mBIFLGdPGg1UmRNVGNewHZtKoefSGUplLtDk3vuBJdIBXOqg==", "pet"=>{"name"=>"Bert", "species"=>"Cat", "color"=>"Black/White", "image_url"=>"http://suindependent.com/wp-content/uploads/2017/05/Bert.jpg", "age_in_months"=>"15", "description"=>"Feisty and Fun."}, "commit"=>"Create Pet"}
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bert"], ["species", "Cat"], ["color", "Black/White"], ["image_url", "http://suindependent.com/wp-content/uploads/2017/05/Bert.jpg"], ["age_in_months", 15], ["description", "Feisty and Fun."], ["created_at", "2017-09-09 15:02:24.657379"], ["updated_at", "2017-09-09 15:02:24.657379"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/13
+Completed 302 Found in 32ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/pets/13" for 127.0.0.1 at 2017-09-09 11:02:24 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 62ms (Views: 55.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:02:26 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 57ms (Views: 48.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:02:29 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (11.3ms)
+  Rendered pets/new.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 83ms (Views: 72.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:03:27 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yZVkfW+YTK5hoL8zqGUmarPoU/K5fopuTHr/ZSRDQQ100/e600OCx8PFqCnVjsxhqFJdJi5sXIFP0MTr3dev9Q==", "pet"=>{"name"=>"Dusty", "species"=>"Dog", "color"=>"Tan", "image_url"=>"https://i.pinimg.com/736x/8f/b2/94/8fb2946148162833194bb23b323e48f2--calgary-people.jpg", "age_in_months"=>"2", "description"=>"Misses his brothers and sisters."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Dusty"], ["species", "Dog"], ["color", "Tan"], ["image_url", "https://i.pinimg.com/736x/8f/b2/94/8fb2946148162833194bb23b323e48f2--calgary-people.jpg"], ["age_in_months", 2], ["description", "Misses his brothers and sisters."], ["created_at", "2017-09-09 15:03:27.407271"], ["updated_at", "2017-09-09 15:03:27.407271"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/14
+Completed 302 Found in 7ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/pets/14" for 127.0.0.1 at 2017-09-09 11:03:27 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 53ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:03:30 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 45ms (Views: 39.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:03:33 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (7.0ms)
+  Rendered pets/new.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 50ms (Views: 40.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:04:09 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MPZC54RzezcEiYUiK6p0bzQRw7RkO9FcJx60k3wVBr6NsNEgOKi1XqbskjhWQZ5kL6vNYPMpB7MktI8dhYHoRg==", "pet"=>{"name"=>"Roscoe", "species"=>"Cat", "color"=>"Tan", "image_url"=>"http://www.caaws.org/wp-content/uploads/2017/04/Roscoe-2-e1492431206120-300x300.jpg", "age_in_months"=>"26", "description"=>"Majestic and wise."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Roscoe"], ["species", "Cat"], ["color", "Tan"], ["image_url", "http://www.caaws.org/wp-content/uploads/2017/04/Roscoe-2-e1492431206120-300x300.jpg"], ["age_in_months", 26], ["description", "Majestic and wise."], ["created_at", "2017-09-09 15:04:09.099448"], ["updated_at", "2017-09-09 15:04:09.099448"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/15
+Completed 302 Found in 8ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/pets/15" for 127.0.0.1 at 2017-09-09 11:04:09 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:04:13 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 50ms (Views: 42.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:04:17 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (9.1ms)
+  Rendered pets/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 65ms (Views: 57.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:05:03 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZFupnf/2CI/IZwR7/6wkoP/ErJu2MLPu7UPN8hdYV6/ZHTpaQy3G5moCE2GCR86r5H6iTyEiZQHu6fZ87sy5Vw==", "pet"=>{"name"=>"Fred", "species"=>"Dog", "color"=>"Orange", "image_url"=>"https://i.pinimg.com/736x/cb/45/95/cb45950ad72e750b0b687d7ed5384f0d--how-to-get-doberman-pinscher.jpg", "age_in_months"=>"4", "description"=>"The quiet one of the litter."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Fred"], ["species", "Dog"], ["color", "Orange"], ["image_url", "https://i.pinimg.com/736x/cb/45/95/cb45950ad72e750b0b687d7ed5384f0d--how-to-get-doberman-pinscher.jpg"], ["age_in_months", 4], ["description", "The quiet one of the litter."], ["created_at", "2017-09-09 15:05:03.910984"], ["updated_at", "2017-09-09 15:05:03.910984"]]
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/16
+Completed 302 Found in 7ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/pets/16" for 127.0.0.1 at 2017-09-09 11:05:03 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:05:06 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:05:09 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (4.6ms)
+  Rendered pets/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 49ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:06:15 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A+Yi4swWEZtknqoXDnbGMwM31bBBSXXZ91vFTJtkX5m+oLElcM3f8sb7vQ1znSw4GI3bZNZbozb08f7CYvCxYQ==", "pet"=>{"name"=>"Honey", "species"=>"Cat", "color"=>"Grey", "image_url"=>"https://static1.squarespace.com/static/522c9189e4b09d456b09290d/t/569e4ee4cbced647da459909/1453215484653/", "age_in_months"=>"3", "description"=>"She's sweet and sticky."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Honey"], ["species", "Cat"], ["color", "Grey"], ["image_url", "https://static1.squarespace.com/static/522c9189e4b09d456b09290d/t/569e4ee4cbced647da459909/1453215484653/"], ["age_in_months", 3], ["description", "She's sweet and sticky."], ["created_at", "2017-09-09 15:06:15.059362"], ["updated_at", "2017-09-09 15:06:15.059362"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/17
+Completed 302 Found in 11ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/pets/17" for 127.0.0.1 at 2017-09-09 11:06:15 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:06:18 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 52ms (Views: 43.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:06:21 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (5.4ms)
+  Rendered pets/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 53ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:07:19 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KGWjnWYttTU9vLahubR4k8lMbSuTgdtdHkUNoZ2koUOVIzBa2vZ7XJ/ZobvEX5KY0vZj/wSTDbId7zYvZDBPuw==", "pet"=>{"name"=>"Phoenix", "species"=>"Dog", "color"=>"Tan", "image_url"=>"http://www.gannett-cdn.com/-mm-/9065941e142eb769bb76794c742e08d1e14ee558/r=300/http/www.gannett-cdn.com/-mm-/9065941e142eb769bb76794c742e08d1e14ee558/r=300/http/www.gannett-cdn.com/-mm-/20405e013c17db0ffab48c79faab251c7e16373c/c=108-0-588-480/local/-/media/2015/12/02/Phoenix/Phoenix/635846483676209811-Happy.jpg", "age_in_months"=>"17", "description"=>"Happy dog, loves to laugh."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Phoenix"], ["species", "Dog"], ["color", "Tan"], ["image_url", "http://www.gannett-cdn.com/-mm-/9065941e142eb769bb76794c742e08d1e14ee558/r=300/http/www.gannett-cdn.com/-mm-/9065941e142eb769bb76794c742e08d1e14ee558/r=300/http/www.gannett-cdn.com/-mm-/20405e013c17db0ffab48c79faab251c7e16373c/c=108-0-588-480/local/-/media/2015/12/02/Phoenix/Phoenix/635846483676209811-Happy.jpg"], ["age_in_months", 17], ["description", "Happy dog, loves to laugh."], ["created_at", "2017-09-09 15:07:19.702369"], ["updated_at", "2017-09-09 15:07:19.702369"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/18
+Completed 302 Found in 19ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/pets/18" for 127.0.0.1 at 2017-09-09 11:07:19 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"18"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 46ms (Views: 41.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:07:22 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 59ms (Views: 54.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:07:44 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (5.6ms)
+  Rendered pets/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:08:40 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ga8B6BU3a3dlnnfSVpWDqLy4UQWq1VSxtfaHNAgbGoU86ZIvqeylHsf7YMgrfmmjpwJf0T3Hgl62XLy68Y/0fQ==", "pet"=>{"name"=>"Miss Toot", "species"=>"Cat", "color"=>"White/Tan", "image_url"=>"http://www.caaws.org/wp-content/uploads/2016/08/misstoot-1-300x300.jpg", "age_in_months"=>"19", "description"=>"Strong and smart."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Miss Toot"], ["species", "Cat"], ["color", "White/Tan"], ["image_url", "http://www.caaws.org/wp-content/uploads/2016/08/misstoot-1-300x300.jpg"], ["age_in_months", 19], ["description", "Strong and smart."], ["created_at", "2017-09-09 15:08:40.248942"], ["updated_at", "2017-09-09 15:08:40.248942"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/19
+Completed 302 Found in 8ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/pets/19" for 127.0.0.1 at 2017-09-09 11:08:40 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 27.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:08:42 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 47ms (Views: 43.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:08:45 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (7.2ms)
+  Rendered pets/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 53ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:09:44 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BgZ6XjS9L5nUFMrUTlnOafMDkEjXdd6ZIZXLSyjTvt67QOmZiGbh8HZx3c4zsiRi6LmenEBnCHYiP/DF0UdQJg==", "pet"=>{"name"=>"Rufus", "species"=>"Dog", "color"=>"Black/Tan", "image_url"=>"http://www.gannett-cdn.com/-mm-/9065941e142eb769bb76794c742e08d1e14ee558/r=300/http/www.gannett-cdn.com/-mm-/9065941e142eb769bb76794c742e08d1e14ee558/r=300/http/www.gannett-cdn.com/-mm-/236beb293d6192e9ce254d085efaaa3ca5aa22cf/c=82-0-596-514/local/-/media/2016/01/06/Phoenix/Phoenix/635876984318353757-frankiepotw.JPG", "age_in_months"=>"19", "description"=>"Abused, looking for a loving family."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rufus"], ["species", "Dog"], ["color", "Black/Tan"], ["image_url", "http://www.gannett-cdn.com/-mm-/9065941e142eb769bb76794c742e08d1e14ee558/r=300/http/www.gannett-cdn.com/-mm-/9065941e142eb769bb76794c742e08d1e14ee558/r=300/http/www.gannett-cdn.com/-mm-/236beb293d6192e9ce254d085efaaa3ca5aa22cf/c=82-0-596-514/local/-/media/2016/01/06/Phoenix/Phoenix/635876984318353757-frankiepotw.JPG"], ["age_in_months", 19], ["description", "Abused, looking for a loving family."], ["created_at", "2017-09-09 15:09:44.864369"], ["updated_at", "2017-09-09 15:09:44.864369"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/20
+Completed 302 Found in 10ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/pets/20" for 127.0.0.1 at 2017-09-09 11:09:44 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 30ms (Views: 25.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:09:48 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 51ms (Views: 46.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:09:51 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.7ms)
+  Rendered pets/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:10:33 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kuWulZ0rKKff9ypHBhnXmClIlQOdwtXplHYsEHlb/Ewvoz1SIfDmzn2SPV178j2TMvKb1wrQAwaX3BeegM8StA==", "pet"=>{"name"=>"Simba", "species"=>"Cat", "color"=>"Orange", "image_url"=>"https://www.petcentric.com/media/187753/seniorcats.jpg?anchor=center&mode=crop&quality=80&width=300&height=300&rnd=131239573680000000", "age_in_months"=>"10", "description"=>"Outdoor cat, likes to chase mice."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Simba"], ["species", "Cat"], ["color", "Orange"], ["image_url", "https://www.petcentric.com/media/187753/seniorcats.jpg?anchor=center&mode=crop&quality=80&width=300&height=300&rnd=131239573680000000"], ["age_in_months", 10], ["description", "Outdoor cat, likes to chase mice."], ["created_at", "2017-09-09 15:10:33.228777"], ["updated_at", "2017-09-09 15:10:33.228777"]]
+  [1m[35m (3.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/21
+Completed 302 Found in 10ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/pets/21" for 127.0.0.1 at 2017-09-09 11:10:33 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 25.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/21/edit" for 127.0.0.1 at 2017-09-09 11:10:35 -0400
+Processing by PetsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering pets/edit.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.4ms)
+  Rendered pets/edit.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 44ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/pets/21" for 127.0.0.1 at 2017-09-09 11:10:39 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TjLghRLulRB4BBj/UkRJxo7QQpjI0wKQS+BBYFA8x27qPCrF/T0pIvDgceX7Jlgsc6KbENR6ymGb8Ryih7AF6A==", "pet"=>{"name"=>"Simba", "species"=>"Cat", "color"=>"Orange", "image_url"=>"https://www.petcentric.com/media/187753/seniorcats.jpg?anchor=center&mode=crop&quality=80&width=300&height=300&rnd=131239573680000000", "age_in_months"=>"10", "description"=>"Outdoor cat, likes to chase mice."}, "commit"=>"Update Pet", "id"=>"21"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/21
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/pets/21" for 127.0.0.1 at 2017-09-09 11:10:39 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:10:43 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 54ms (Views: 44.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:11:06 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (5.8ms)
+  Rendered pets/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 57ms (Views: 53.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:12:45 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qrqI6TD+W3vSi5mdO9Nw+VvHqPwuQ/Zz4gBHQNPB4gwX/BsujCWVEnDujodGOJryQH2mKLlRIJzhqnzOKlUM9A==", "pet"=>{"name"=>"Buck", "species"=>"Dog", "color"=>"Tan/White", "image_url"=>"http://www.muchlove.org/wp-content/uploads/2017/09/Buck1-300x300.jpg", "age_in_months"=>"18", "description"=>"Happy dog, loves rap music."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Buck"], ["species", "Dog"], ["color", "Tan/White"], ["image_url", "http://www.muchlove.org/wp-content/uploads/2017/09/Buck1-300x300.jpg"], ["age_in_months", 18], ["description", "Happy dog, loves rap music."], ["created_at", "2017-09-09 15:12:45.707429"], ["updated_at", "2017-09-09 15:12:45.707429"]]
+  [1m[35m (3.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/22
+Completed 302 Found in 12ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/pets/22" for 127.0.0.1 at 2017-09-09 11:12:45 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"22"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 44ms (Views: 37.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:12:48 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 53ms (Views: 43.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:12:51 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (11.7ms)
+  Rendered pets/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 74ms (Views: 67.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:13:29 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"c9IvEroP5tSBwo5bB10NwiFMsrluBtdn48WdwbPYkO3OlLzVBtQovSOnmUF6tufJOva8bfkUAYjgb6ZPSkx+FQ==", "pet"=>{"name"=>"Chaz", "species"=>"Cat", "color"=>"Grey/Tan", "image_url"=>"http://suindependent.com/wp-content/uploads/2017/07/Chaz.jpg", "age_in_months"=>"20", "description"=>"Loves meatloaf."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chaz"], ["species", "Cat"], ["color", "Grey/Tan"], ["image_url", "http://suindependent.com/wp-content/uploads/2017/07/Chaz.jpg"], ["age_in_months", 20], ["description", "Loves meatloaf."], ["created_at", "2017-09-09 15:13:29.909983"], ["updated_at", "2017-09-09 15:13:29.909983"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/23
+Completed 302 Found in 10ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/pets/23" for 127.0.0.1 at 2017-09-09 11:13:29 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 40ms (Views: 33.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:13:35 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 58ms (Views: 51.3ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:13:38 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (7.7ms)
+  Rendered pets/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 71ms (Views: 66.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:14:24 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BF1aVav6qrpHKXC5N1n5wO4qdujv3qaUNv6zn/Vqjke5G8mSFyFk0+VMZ6NKshPL9ZB4PHjMcHs1VIgRDP5gvw==", "pet"=>{"name"=>"Flora", "species"=>"Dog", "color"=>"Black", "image_url"=>"http://www.caaws.org/wp-content/uploads/2017/05/thumbnail_Flora-3-e1493943925733-300x300.jpg", "age_in_months"=>"7", "description"=>"Looking for a family who will appreciate her."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Flora"], ["species", "Dog"], ["color", "Black"], ["image_url", "http://www.caaws.org/wp-content/uploads/2017/05/thumbnail_Flora-3-e1493943925733-300x300.jpg"], ["age_in_months", 7], ["description", "Looking for a family who will appreciate her."], ["created_at", "2017-09-09 15:14:24.475479"], ["updated_at", "2017-09-09 15:14:24.475479"]]
+  [1m[35m (4.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/24
+Completed 302 Found in 10ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/pets/24" for 127.0.0.1 at 2017-09-09 11:14:24 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 24], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 48ms (Views: 41.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:14:33 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 73ms (Views: 59.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:14:50 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (4.4ms)
+  Rendered pets/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 52ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:15:24 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s+BE0QMxai9w1QLElhfiZ/HRziYkyZQ9ZEsGU5tANCkOptcWv+qkRtKwFd7r/Ahs6mvA8rPbQtJn4T3dYtTa0Q==", "pet"=>{"name"=>"Amira", "species"=>"Cat", "color"=>"White/Grey", "image_url"=>"http://www.caaws.org/wp-content/uploads/2016/08/Amira-2-1-300x300.jpg", "age_in_months"=>"8", "description"=>"Sometimes she thinks she's a tiger."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Amira"], ["species", "Cat"], ["color", "White/Grey"], ["image_url", "http://www.caaws.org/wp-content/uploads/2016/08/Amira-2-1-300x300.jpg"], ["age_in_months", 8], ["description", "Sometimes she thinks she's a tiger."], ["created_at", "2017-09-09 15:15:24.996978"], ["updated_at", "2017-09-09 15:15:24.996978"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/25
+Completed 302 Found in 11ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/pets/25" for 127.0.0.1 at 2017-09-09 11:15:25 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 25], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 47ms (Views: 42.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:15:38 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 59ms (Views: 53.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:15:41 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (7.9ms)
+  Rendered pets/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 58ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:16:25 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nYvhVLWaKzoP4/t2zZL0wGsfa4ofQ3kJS1vHf0hUSiogzXKTCUHlU62G7GyweR7LcKVlXohRr+ZI8fzxscCk0g==", "pet"=>{"name"=>"Scruffy", "species"=>"Dog", "color"=>"White/Tan", "image_url"=>"https://pet-net.net/wp-content/uploads/Scruffy-Papillon-Dog-For-Adoption-in-Hawaii3-300x300.jpg", "age_in_months"=>"6", "description"=>"King of the lapdogs."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Scruffy"], ["species", "Dog"], ["color", "White/Tan"], ["image_url", "https://pet-net.net/wp-content/uploads/Scruffy-Papillon-Dog-For-Adoption-in-Hawaii3-300x300.jpg"], ["age_in_months", 6], ["description", "King of the lapdogs."], ["created_at", "2017-09-09 15:16:25.554024"], ["updated_at", "2017-09-09 15:16:25.554024"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/26
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/pets/26" for 127.0.0.1 at 2017-09-09 11:16:25 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"26"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 26], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 40.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:16:30 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 57ms (Views: 51.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:16:54 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (4.6ms)
+  Rendered pets/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 52ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:17:40 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oK5pKfVy+tY+mMfUVAFvN4eXm6WrViKT9lWq+Xo6tjQd6PruSak0v5z90M4p6oU8nC2VcTxE9Hz1/5F3g65YzA==", "pet"=>{"name"=>"Damon", "species"=>"Cat", "color"=>"Black/Grey", "image_url"=>"http://www.caaws.org/wp-content/uploads/2016/12/thumbnail_damon3-e1481809847953-300x300.jpg", "age_in_months"=>"11", "description"=>"Enjoys carpet cat structures."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Damon"], ["species", "Cat"], ["color", "Black/Grey"], ["image_url", "http://www.caaws.org/wp-content/uploads/2016/12/thumbnail_damon3-e1481809847953-300x300.jpg"], ["age_in_months", 11], ["description", "Enjoys carpet cat structures."], ["created_at", "2017-09-09 15:17:40.887552"], ["updated_at", "2017-09-09 15:17:40.887552"]]
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/27
+Completed 302 Found in 8ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/pets/27" for 127.0.0.1 at 2017-09-09 11:17:40 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"27"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 27], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 38ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:17:45 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 58ms (Views: 50.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:18:02 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.1ms)
+  Rendered pets/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 55ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:18:42 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KB7G6XwI0JbZqxM4OGY9LqkI1en9GeR2iRNrhfh/xwWVWFUuwNMe/3vOBCJFjdclsrLbPWoLMpmKuVALAesp/Q==", "pet"=>{"name"=>"Conor", "species"=>"Dog", "color"=>"Tan/White", "image_url"=>"http://www.hslcnm.org/wp-content/uploads/2016/01/dog.png", "age_in_months"=>"13", "description"=>"Named after his favorite boxer."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Conor"], ["species", "Dog"], ["color", "Tan/White"], ["image_url", "http://www.hslcnm.org/wp-content/uploads/2016/01/dog.png"], ["age_in_months", 13], ["description", "Named after his favorite boxer."], ["created_at", "2017-09-09 15:18:42.780601"], ["updated_at", "2017-09-09 15:18:42.780601"]]
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/28
+Completed 302 Found in 9ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/pets/28" for 127.0.0.1 at 2017-09-09 11:18:42 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 28], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 54ms (Views: 48.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:18:47 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 60ms (Views: 52.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:19:14 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (5.5ms)
+  Rendered pets/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 43ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:19:40 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NlwHCZOjPvpX7p0XBx5XbeygmqlA87lQ2gv5DgX4mD2LGpTOL3jwk/WLig169b1m9xqUfdfhb7/ZocKA/Gx2xQ==", "pet"=>{"name"=>"Darkness", "species"=>"Cat", "color"=>"Black", "image_url"=>"https://i.pinimg.com/originals/37/4f/79/374f790a06098ed88285bf980a1aec72.jpg", "age_in_months"=>"10", "description"=>"Lord of the underworld."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Darkness"], ["species", "Cat"], ["color", "Black"], ["image_url", "https://i.pinimg.com/originals/37/4f/79/374f790a06098ed88285bf980a1aec72.jpg"], ["age_in_months", 10], ["description", "Lord of the underworld."], ["created_at", "2017-09-09 15:19:40.660293"], ["updated_at", "2017-09-09 15:19:40.660293"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/29
+Completed 302 Found in 10ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/pets/29" for 127.0.0.1 at 2017-09-09 11:19:40 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"29"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 29], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:19:43 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 58ms (Views: 52.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:19:56 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (34.7ms)
+  Rendered pets/new.html.erb within layouts/application (39.3ms)
+Completed 200 OK in 76ms (Views: 73.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:21:31 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MmDys5imB5D/pNZu8c+ADdGJc1oYWupSYCtz32XqPHiPJmF0JH3J+V3BwXSMJGoGyjN9jo9IPL1jgUhRnH7SgA==", "pet"=>{"name"=>"Daisy", "species"=>"Dog", "color"=>"White/Grey", "image_url"=>"http://cayugadogrescue.org/wp/wp-content/uploads/2017/06/Daisy2-300.jpg", "age_in_months"=>"20", "description"=>"She smells like daisies."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Daisy"], ["species", "Dog"], ["color", "White/Grey"], ["image_url", "http://cayugadogrescue.org/wp/wp-content/uploads/2017/06/Daisy2-300.jpg"], ["age_in_months", 20], ["description", "She smells like daisies."], ["created_at", "2017-09-09 15:21:31.135980"], ["updated_at", "2017-09-09 15:21:31.135980"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/30
+Completed 302 Found in 13ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/pets/30" for 127.0.0.1 at 2017-09-09 11:21:31 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 30], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:21:45 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 96ms (Views: 88.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:21:48 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (15.2ms)
+  Rendered pets/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 80ms (Views: 69.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:23:53 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cydz44/qlN5aAzQ0wzJoPutQRbGfcurwfDvkAd4ngMK2YeAkMzFat/hmIy6+2YI18OpLZQhgPB9/kd+PJ7NuOg==", "pet"=>{"name"=>"Snow White", "species"=>"Cat", "color"=>"Black/White", "image_url"=>"https://static.wixstatic.com/media/c7b55b_70e72588b1d44ce187c687ab27713f43~mv2_d_3356_5034_s_4_2.jpg/v1/fill/w_300,h_300/c7b55b_70e72588b1d44ce187c687ab27713f43~mv2_d_3356_5034_s_4_2.jpg", "age_in_months"=>"20", "description"=>"She likes male cats, comes with seven suitors."}, "commit"=>"Create Pet"}
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Snow White"], ["species", "Cat"], ["color", "Black/White"], ["image_url", "https://static.wixstatic.com/media/c7b55b_70e72588b1d44ce187c687ab27713f43~mv2_d_3356_5034_s_4_2.jpg/v1/fill/w_300,h_300/c7b55b_70e72588b1d44ce187c687ab27713f43~mv2_d_3356_5034_s_4_2.jpg"], ["age_in_months", 20], ["description", "She likes male cats, comes with seven suitors."], ["created_at", "2017-09-09 15:23:53.376230"], ["updated_at", "2017-09-09 15:23:53.376230"]]
+  [1m[35m (2.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/31
+Completed 302 Found in 30ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/pets/31" for 127.0.0.1 at 2017-09-09 11:23:53 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 31], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 59ms (Views: 52.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:23:57 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 63ms (Views: 55.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:24:09 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (8.9ms)
+  Rendered pets/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 54ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:25:10 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4SFACidOLWofr6IaXRhH1iqa9QjVHmFGJ8uYOHDrtUlcZ9PNm5XjA73KtQAg863dMSD73EIMt6kkYaO2iX9bsQ==", "pet"=>{"name"=>"Murial", "species"=>"Dog", "color"=>"White/Tan", "image_url"=>"http://harmonyhaven.org/murial.jpg", "age_in_months"=>"30", "description"=>"Family friendly."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.4ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Murial"], ["species", "Dog"], ["color", "White/Tan"], ["image_url", "http://harmonyhaven.org/murial.jpg"], ["age_in_months", 30], ["description", "Family friendly."], ["created_at", "2017-09-09 15:25:10.904355"], ["updated_at", "2017-09-09 15:25:10.904355"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/32
+Completed 302 Found in 10ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/pets/32" for 127.0.0.1 at 2017-09-09 11:25:10 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 32], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:25:12 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 58ms (Views: 53.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:25:31 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.0ms)
+  Rendered pets/new.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 56ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:26:32 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"e3w3dR2zjhfzqOMUgiCPUqjG5Y0mC3x6Ju9XRcLg2wjGOqSyoWhAflHN9A7/y2VZs3zrWbEZqpUlRWzLO3Q18A==", "pet"=>{"name"=>"Misty", "species"=>"Cat", "color"=>"Grey", "image_url"=>"http://suindependent.com/wp-content/uploads/2017/07/Misty.jpg", "age_in_months"=>"20", "description"=>"She likes to hide, but comes out for candy."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Misty"], ["species", "Cat"], ["color", "Grey"], ["image_url", "http://suindependent.com/wp-content/uploads/2017/07/Misty.jpg"], ["age_in_months", 20], ["description", "She likes to hide, but comes out for candy."], ["created_at", "2017-09-09 15:26:32.392791"], ["updated_at", "2017-09-09 15:26:32.392791"]]
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/33
+Completed 302 Found in 10ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/pets/33" for 127.0.0.1 at 2017-09-09 11:26:32 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 43ms (Views: 38.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets/33/edit" for 127.0.0.1 at 2017-09-09 11:26:37 -0400
+Processing by PetsController#edit as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering pets/edit.html.erb within layouts/application
+  Rendered pets/_form.html.erb (8.8ms)
+  Rendered pets/edit.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 91ms (Views: 77.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/pets/33" for 127.0.0.1 at 2017-09-09 11:26:51 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QC4KF15xdYZK0vSK5VQI4dZAL3xCo2bo28CtGBSqpumQc1Tp6QF4I7vgS94DpyAICmFYEsdEa8dAxOux8fDSjw==", "pet"=>{"name"=>"Misty", "species"=>"Cat", "color"=>"Grey", "image_url"=>"http://suindependent.com/wp-content/uploads/2017/07/Misty.jpg", "age_in_months"=>"20", "description"=>"She likes to hide."}, "commit"=>"Update Pet", "id"=>"33"}
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "pets" SET "description" = ?, "updated_at" = ? WHERE "pets"."id" = ?[0m  [["description", "She likes to hide."], ["updated_at", "2017-09-09 15:26:51.691951"], ["id", 33]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/33
+Completed 302 Found in 14ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pets/33" for 127.0.0.1 at 2017-09-09 11:26:51 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"33"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 82ms (Views: 76.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:26:53 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (23.7ms)
+Completed 200 OK in 87ms (Views: 80.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:27:09 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (9.4ms)
+  Rendered pets/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:27:56 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nlLNWZhJWWVqAnbheuQJAsejfAkChW3eixdXRxAWiTMjFF6eJJKXDMhnYfsHD+MJ3Bly3ZWXuzGIvWzJ6YJnyw==", "pet"=>{"name"=>"Bruiser", "species"=>"Dog", "color"=>"White/Tan", "image_url"=>"http://noahsarksociety.org/wp-content/uploads/2017/07/20170711_170843-300x300.jpg", "age_in_months"=>"27", "description"=>"Very excited and lots of energy."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Bruiser"], ["species", "Dog"], ["color", "White/Tan"], ["image_url", "http://noahsarksociety.org/wp-content/uploads/2017/07/20170711_170843-300x300.jpg"], ["age_in_months", 27], ["description", "Very excited and lots of energy."], ["created_at", "2017-09-09 15:27:56.820202"], ["updated_at", "2017-09-09 15:27:56.820202"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/34
+Completed 302 Found in 10ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pets/34" for 127.0.0.1 at 2017-09-09 11:27:56 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 34], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:27:58 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 50ms (Views: 45.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:28:11 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (5.1ms)
+  Rendered pets/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 43ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:28:41 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q8tSNiwVIu/4ATpajvZ4WsB8qatRRsxw3Qy1VFyZtdMWjcHxkM7shlpkLUDzHZJR28anf8ZUGp/epo7apQ1bKw==", "pet"=>{"name"=>"Chardonnay", "species"=>"Cat", "color"=>"White/Grey", "image_url"=>"https://pspca.org/wp-content/uploads/2015/10/Chardonnay-300x300.jpg", "age_in_months"=>"3", "description"=>"You'll get drunk off her love."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Chardonnay"], ["species", "Cat"], ["color", "White/Grey"], ["image_url", "https://pspca.org/wp-content/uploads/2015/10/Chardonnay-300x300.jpg"], ["age_in_months", 3], ["description", "You'll get drunk off her love."], ["created_at", "2017-09-09 15:28:41.926093"], ["updated_at", "2017-09-09 15:28:41.926093"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/35
+Completed 302 Found in 9ms (ActiveRecord: 2.2ms)
+
+
+Started GET "/pets/35" for 127.0.0.1 at 2017-09-09 11:28:41 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 35], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 37ms (Views: 31.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:28:46 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 51ms (Views: 44.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:28:58 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (7.8ms)
+  Rendered pets/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 49ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:30:00 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"P4AR7QTg7PHZ3GYWf0zFKMY7vyuqGoOkwSkrxYM+tMWCxoIquDsimHu5cQwCpy8j3YGx/z0IVUvCgxBLeqpaPQ==", "pet"=>{"name"=>"Rocky", "species"=>"Dog", "color"=>"White/Tan", "image_url"=>"http://newarkvethospital.com/wp-content/uploads/2016/04/english-bulldog-538485_640-300x300.jpg", "age_in_months"=>"13", "description"=>"Hardly slobbers."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rocky"], ["species", "Dog"], ["color", "White/Tan"], ["image_url", "http://newarkvethospital.com/wp-content/uploads/2016/04/english-bulldog-538485_640-300x300.jpg"], ["age_in_months", 13], ["description", "Hardly slobbers."], ["created_at", "2017-09-09 15:30:00.123237"], ["updated_at", "2017-09-09 15:30:00.123237"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/36
+Completed 302 Found in 7ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/pets/36" for 127.0.0.1 at 2017-09-09 11:30:00 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 40ms (Views: 34.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:30:03 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 62ms (Views: 56.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:30:18 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (4.9ms)
+  Rendered pets/new.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 39ms (Views: 35.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:30:47 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tdPTCNSve7O3B4sTMTFmX0TzFmP+hixqVGmDk8e6eVgIlUDPaHS12hVinAlM2oxUX0kYt2mU+oVXw7gdPi6XoA==", "pet"=>{"name"=>"Keke", "species"=>"Cat", "color"=>"Orange", "image_url"=>"http://community.warm1069.com/wp-content/uploads/2015/12/keke-300x300.jpg", "age_in_months"=>"17", "description"=>"Looks up to Garfield."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Keke"], ["species", "Cat"], ["color", "Orange"], ["image_url", "http://community.warm1069.com/wp-content/uploads/2015/12/keke-300x300.jpg"], ["age_in_months", 17], ["description", "Looks up to Garfield."], ["created_at", "2017-09-09 15:30:47.248704"], ["updated_at", "2017-09-09 15:30:47.248704"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/37
+Completed 302 Found in 7ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/pets/37" for 127.0.0.1 at 2017-09-09 11:30:47 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 37], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 31ms (Views: 27.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:30:51 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.7ms)
+Completed 200 OK in 48ms (Views: 45.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:30:54 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.6ms)
+  Rendered pets/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 44ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:31:45 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"b7/wnlDqUGqKN60uYGwpfUHCfpGTh1PTW48sqcZHavLS+WNZ7DGeAyhSujQdh8N2WnhwRQSVhTxYJRcnP9OECg==", "pet"=>{"name"=>"Rocko", "species"=>"Dog", "color"=>"Grey", "image_url"=>"https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=117761067", "age_in_months"=>"6", "description"=>"Chases squirrels like a pro."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rocko"], ["species", "Dog"], ["color", "Grey"], ["image_url", "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=117761067"], ["age_in_months", 6], ["description", "Chases squirrels like a pro."], ["created_at", "2017-09-09 15:31:45.679381"], ["updated_at", "2017-09-09 15:31:45.679381"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/38
+Completed 302 Found in 12ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/pets/38" for 127.0.0.1 at 2017-09-09 11:31:45 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"38"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 38], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 59ms (Views: 54.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:31:49 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 71ms (Views: 65.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:32:01 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.7ms)
+  Rendered pets/new.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 49ms (Views: 45.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:33:24 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3P64K1kACrJ8/+JDCXobgNipu1bRq3R0zKjBWjW30+BhuCvs5dvE296a9Vl0kfGLwxO1gka5opvPAvrUzCM9GA==", "pet"=>{"name"=>"Benji", "species"=>"Cat", "color"=>"Tan", "image_url"=>"http://memphistn.gov/Portals/0/images/ADOPTcat.jpg", "age_in_months"=>"18", "description"=>"Beautiful eyes."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Benji"], ["species", "Cat"], ["color", "Tan"], ["image_url", "http://memphistn.gov/Portals/0/images/ADOPTcat.jpg"], ["age_in_months", 18], ["description", "Beautiful eyes."], ["created_at", "2017-09-09 15:33:24.880881"], ["updated_at", "2017-09-09 15:33:24.880881"]]
+  [1m[35m (3.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/39
+Completed 302 Found in 8ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/pets/39" for 127.0.0.1 at 2017-09-09 11:33:24 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"39"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 39], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 31.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:33:27 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 53ms (Views: 43.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:33:30 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.3ms)
+  Rendered pets/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 57ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:34:22 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fzYHv8PixcLmpB2he3oH2KuuwejTGuPb1o+/7VfhsIzCcJR4fzkLq0TBCrsGke3TsBTPPEQINTTVJYRjrnVedA==", "pet"=>{"name"=>"Santiago", "species"=>"Dog", "color"=>"Black/White", "image_url"=>"http://media.npr.org/assets/img/2014/07/03/punta-santiago-sato-pier-pack_sq-7b41efd7912d7d3d14430e00d5c1bebe3594cc76-s300-c85.jpg", "age_in_months"=>"18", "description"=>"Loyal."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Santiago"], ["species", "Dog"], ["color", "Black/White"], ["image_url", "http://media.npr.org/assets/img/2014/07/03/punta-santiago-sato-pier-pack_sq-7b41efd7912d7d3d14430e00d5c1bebe3594cc76-s300-c85.jpg"], ["age_in_months", 18], ["description", "Loyal."], ["created_at", "2017-09-09 15:34:22.504787"], ["updated_at", "2017-09-09 15:34:22.504787"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/40
+Completed 302 Found in 10ms (ActiveRecord: 2.4ms)
+
+
+Started GET "/pets/40" for 127.0.0.1 at 2017-09-09 11:34:22 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"40"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 40], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 64ms (Views: 58.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:34:24 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 66ms (Views: 59.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:34:44 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.1ms)
+  Rendered pets/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 43ms (Views: 37.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:35:06 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p5BvHKCdv0EgF2xiOZH2NKXiGepLyMH5STVtfC+Qdkoa1vzbHEZxKIJye3hEehw/vlgXPtzaFxZKn1by1gSYsg==", "pet"=>{"name"=>"Sophia", "species"=>"Cat", "color"=>"Black", "image_url"=>"http://www.caaws.org/wp-content/uploads/2016/08/sophia-1-300x300.jpg", "age_in_months"=>"18", "description"=>"Only has three legs."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Sophia"], ["species", "Cat"], ["color", "Black"], ["image_url", "http://www.caaws.org/wp-content/uploads/2016/08/sophia-1-300x300.jpg"], ["age_in_months", 18], ["description", "Only has three legs."], ["created_at", "2017-09-09 15:35:06.830296"], ["updated_at", "2017-09-09 15:35:06.830296"]]
+  [1m[35m (2.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/41
+Completed 302 Found in 8ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/pets/41" for 127.0.0.1 at 2017-09-09 11:35:06 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 41], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:35:09 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (19.2ms)
+Completed 200 OK in 55ms (Views: 47.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:35:13 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (9.9ms)
+  Rendered pets/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:35:58 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VyXS4RR5GIEijlP7g3hlSqcqOg460FVXIPOLUevJkQrqY0EmqKLW6IDrROH+k49BvJA02q3Cg7gjWbDfEl1/8g==", "pet"=>{"name"=>"Joe", "species"=>"Dog", "color"=>"Tan", "image_url"=>"http://speciesworld.com/wp-content/uploads/michigan-humane-society-adoptable-dogs-photograph-on-with-adopt-pet.jpg", "age_in_months"=>"11", "description"=>"Loves fashion."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Joe"], ["species", "Dog"], ["color", "Tan"], ["image_url", "http://speciesworld.com/wp-content/uploads/michigan-humane-society-adoptable-dogs-photograph-on-with-adopt-pet.jpg"], ["age_in_months", 11], ["description", "Loves fashion."], ["created_at", "2017-09-09 15:35:58.154927"], ["updated_at", "2017-09-09 15:35:58.154927"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/42
+Completed 302 Found in 8ms (ActiveRecord: 2.6ms)
+
+
+Started GET "/pets/42" for 127.0.0.1 at 2017-09-09 11:35:58 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 42], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:36:00 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 50ms (Views: 43.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:36:21 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.8ms)
+  Rendered pets/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:36:47 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iKshdSLEoY3atvP+8nCExu627qFvJwEVpe+YfGd1x3417bKynh9v5HjT5OSPm27N9Qzgdfg11/qmRaPynuEphg==", "pet"=>{"name"=>"Snowflake", "species"=>"Cat", "color"=>"White", "image_url"=>"http://www.petsandpeople.com/wp-content/uploads/2016/04/AdoptableCats.jpg", "age_in_months"=>"7", "description"=>"Born on Christmas Day."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Snowflake"], ["species", "Cat"], ["color", "White"], ["image_url", "http://www.petsandpeople.com/wp-content/uploads/2016/04/AdoptableCats.jpg"], ["age_in_months", 7], ["description", "Born on Christmas Day."], ["created_at", "2017-09-09 15:36:47.921468"], ["updated_at", "2017-09-09 15:36:47.921468"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/43
+Completed 302 Found in 10ms (ActiveRecord: 4.7ms)
+
+
+Started GET "/pets/43" for 127.0.0.1 at 2017-09-09 11:36:47 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets/43/edit" for 127.0.0.1 at 2017-09-09 11:36:54 -0400
+Processing by PetsController#edit as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  Rendering pets/edit.html.erb within layouts/application
+  Rendered pets/_form.html.erb (10.8ms)
+  Rendered pets/edit.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 66ms (Views: 58.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/pets/43" for 127.0.0.1 at 2017-09-09 11:36:57 -0400
+Processing by PetsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BvdreI0GTo+EhkGOFj4bLFriF4HXmx7tcnWYTzpaggRMQPu6RmnuwexcLfWMaQ7zNjlJj7cbcua7cVvnbog1Zg==", "pet"=>{"name"=>"Snowflake", "species"=>"Cat", "color"=>"White", "image_url"=>"http://www.petsandpeople.com/wp-content/uploads/2016/04/AdoptableCats.jpg", "age_in_months"=>"7", "description"=>"Born on Christmas Day."}, "commit"=>"Update Pet", "id"=>"43"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/43
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/pets/43" for 127.0.0.1 at 2017-09-09 11:36:57 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"43"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 43], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:37:23 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:37:27 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (6.4ms)
+  Rendered pets/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 41ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:38:34 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0WGJ7Tu82AwLUjQH863NGAwNUh0I+sVZsHsOFLiiJsVsJxoqh2cWZak3Ix2ORicTF7dcyZ/oE7az0TWaQTbIPQ==", "pet"=>{"name"=>"Winston", "species"=>"Dog", "color"=>"Tan", "image_url"=>"http://i2.wp.com/shelter-friends.com/wp-content/uploads/2013/11/Dog-Winston-Needs-A-Home.jpg?resize=300%2C300", "age_in_months"=>"19", "description"=>"Happy, loves people."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Winston"], ["species", "Dog"], ["color", "Tan"], ["image_url", "http://i2.wp.com/shelter-friends.com/wp-content/uploads/2013/11/Dog-Winston-Needs-A-Home.jpg?resize=300%2C300"], ["age_in_months", 19], ["description", "Happy, loves people."], ["created_at", "2017-09-09 15:38:34.257863"], ["updated_at", "2017-09-09 15:38:34.257863"]]
+  [1m[35m (4.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/44
+Completed 302 Found in 11ms (ActiveRecord: 5.1ms)
+
+
+Started GET "/pets/44" for 127.0.0.1 at 2017-09-09 11:38:34 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"44"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 44], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 42ms (Views: 36.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:38:36 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 58ms (Views: 52.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:42:25 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (15.6ms)
+  Rendered pets/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 106ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:43:03 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pdEDS5CaHb5Cngd258GfZ3lToTddfgCyVSX+Wx9s8HMYl5CMLEHT1+D7EGyaKnVsYumv48ps1l1Wj8XV5vgeiw==", "pet"=>{"name"=>"Eileen", "species"=>"Cat", "color"=>"White/Black", "image_url"=>"https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=110183103", "age_in_months"=>"13", "description"=>"She sleeps a lot."}, "commit"=>"Create Pet"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Eileen"], ["species", "Cat"], ["color", "White/Black"], ["image_url", "https://www.polyvore.com/cgi/img-thing?.out=jpg&size=l&tid=110183103"], ["age_in_months", 13], ["description", "She sleeps a lot."], ["created_at", "2017-09-09 15:43:03.220442"], ["updated_at", "2017-09-09 15:43:03.220442"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/45
+Completed 302 Found in 22ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/pets/45" for 127.0.0.1 at 2017-09-09 11:43:03 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"45"}
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 45], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 53ms (Views: 44.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:43:05 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 69ms (Views: 62.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:43:13 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (14.3ms)
+  Rendered pets/new.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 62ms (Views: 57.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:44:00 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kMeAwwm1FzAXGE/2/1CuFNXNVXfEatvEUyn1cJPwc5ktgRMEtW7ZWbV9WOyCu0Qfzndbo1N4DStQg87+amSdYQ==", "pet"=>{"name"=>"Clark", "species"=>"Dog", "color"=>"Tan", "image_url"=>"http://www.pawsitivematch.org/perch/resources/clark-1-thumb2x-w380h380.jpg", "age_in_months"=>"16", "description"=>"Rescue dog, needs a loving home."}, "commit"=>"Create Pet"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Clark"], ["species", "Dog"], ["color", "Tan"], ["image_url", "http://www.pawsitivematch.org/perch/resources/clark-1-thumb2x-w380h380.jpg"], ["age_in_months", 16], ["description", "Rescue dog, needs a loving home."], ["created_at", "2017-09-09 15:44:00.973598"], ["updated_at", "2017-09-09 15:44:00.973598"]]
+  [1m[35m (3.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/46
+Completed 302 Found in 12ms (ActiveRecord: 4.4ms)
+
+
+Started GET "/pets/46" for 127.0.0.1 at 2017-09-09 11:44:00 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"46"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 46], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:44:02 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (57.8ms)
+Completed 200 OK in 95ms (Views: 88.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:44:17 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (7.4ms)
+  Rendered pets/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 50ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:45:36 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qkASJyJLxvLP4+D7rviytRw1i97pTk61cF+LcaAHuuMXBoHgnpAIm22G9+HTE1i+B4+FCn5cmFpz9bD/WZNUGw==", "pet"=>{"name"=>"Oreo", "species"=>"Cat", "color"=>"Black/White", "image_url"=>"http://photos.petfinder.com/photos/pets/38919498/1/?bust=1501293712&width=300&-pn.jpg", "age_in_months"=>"8", "description"=>"Named after her favorite food."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Oreo"], ["species", "Cat"], ["color", "Black/White"], ["image_url", "http://photos.petfinder.com/photos/pets/38919498/1/?bust=1501293712&width=300&-pn.jpg"], ["age_in_months", 8], ["description", "Named after her favorite food."], ["created_at", "2017-09-09 15:45:36.764362"], ["updated_at", "2017-09-09 15:45:36.764362"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/47
+Completed 302 Found in 8ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/pets/47" for 127.0.0.1 at 2017-09-09 11:45:36 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"47"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 47], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 40ms (Views: 33.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:45:40 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 59ms (Views: 51.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:45:52 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (20.0ms)
+  Rendered pets/new.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 125ms (Views: 96.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:46:50 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBm9FSda8aP+S6T44NLiM0Oq1XsXkrEan8OPCTAztOR9Xy7Sm4E/ylwus+KdOQg4WBDbr4CAZ/WcabSHyadaHA==", "pet"=>{"name"=>"Luke", "species"=>"Dog", "color"=>"Brown", "image_url"=>"http://gentlebensgiants.org/wp-content/uploads/2017/03/luke-300x300.jpg", "age_in_months"=>"41", "description"=>"Enjoys long walks to the fridge."}, "commit"=>"Create Pet"}
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Luke"], ["species", "Dog"], ["color", "Brown"], ["image_url", "http://gentlebensgiants.org/wp-content/uploads/2017/03/luke-300x300.jpg"], ["age_in_months", 41], ["description", "Enjoys long walks to the fridge."], ["created_at", "2017-09-09 15:46:50.793510"], ["updated_at", "2017-09-09 15:46:50.793510"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/48
+Completed 302 Found in 22ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/pets/48" for 127.0.0.1 at 2017-09-09 11:46:50 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 48], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 34.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:46:53 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 59ms (Views: 53.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:47:06 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (7.2ms)
+  Rendered pets/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 43ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:48:15 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZIVP+dewbt1XlDeHkQ1j01ZNTMHXhuB9JcfWPT2H5tHZw9w+a2ugtPXxIJ3s5onYTfdCFUCUNpImbe2zxBMIKQ==", "pet"=>{"name"=>"Buster", "species"=>"Cat", "color"=>"Tan", "image_url"=>"http://specialpalsshelter.org/wp-content/uploads/2016/02/abby-cat-for-adoptable-pals-website-300x300.jpg", "age_in_months"=>"38", "description"=>"The greatest cat ever."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Buster"], ["species", "Cat"], ["color", "Tan"], ["image_url", "http://specialpalsshelter.org/wp-content/uploads/2016/02/abby-cat-for-adoptable-pals-website-300x300.jpg"], ["age_in_months", 38], ["description", "The greatest cat ever."], ["created_at", "2017-09-09 15:48:15.988188"], ["updated_at", "2017-09-09 15:48:15.988188"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/49
+Completed 302 Found in 12ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/pets/49" for 127.0.0.1 at 2017-09-09 11:48:16 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"49"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 49], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 32ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:48:18 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (23.6ms)
+Completed 200 OK in 60ms (Views: 54.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets/new" for 127.0.0.1 at 2017-09-09 11:48:52 -0400
+Processing by PetsController#new as HTML
+  Rendering pets/new.html.erb within layouts/application
+  Rendered pets/_form.html.erb (8.5ms)
+  Rendered pets/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 58ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/pets" for 127.0.0.1 at 2017-09-09 11:49:20 -0400
+Processing by PetsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BT2ftjrOShQM5vC+lbo/dbe1jAcOIDNExkwU9G/kiZu4ewxxhhWEfa6D56ToUdV+rA+C05ky5avF5i96lnBnYw==", "pet"=>{"name"=>"Pinelope", "species"=>"Dog", "color"=>"Brown", "image_url"=>"http://speciesworld.com/wp-content/uploads/michigan-humane-society-adoptable-dogs-portrait-on-also-the-most-adorable-currently-up-for-adoption-at.jpg", "age_in_months"=>"20", "description"=>"Hears everything."}, "commit"=>"Create Pet"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "pets" ("name", "species", "color", "image_url", "age_in_months", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Pinelope"], ["species", "Dog"], ["color", "Brown"], ["image_url", "http://speciesworld.com/wp-content/uploads/michigan-humane-society-adoptable-dogs-portrait-on-also-the-most-adorable-currently-up-for-adoption-at.jpg"], ["age_in_months", 20], ["description", "Hears everything."], ["created_at", "2017-09-09 15:49:20.007504"], ["updated_at", "2017-09-09 15:49:20.007504"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/pets/50
+Completed 302 Found in 8ms (ActiveRecord: 2.1ms)
+
+
+Started GET "/pets/50" for 127.0.0.1 at 2017-09-09 11:49:20 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"50"}
+  [1m[36mPet Load (0.2ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 50], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-09 11:49:22 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 58ms (Views: 51.4ms | ActiveRecord: 1.1ms)
+
+
