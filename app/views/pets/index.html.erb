@@ -21,7 +21,7 @@
         <td><%= pet.name %></td>
         <td><%= pet.species %></td>
         <td><%= pet.color %></td>
-        <td><%= pet.image_url %></td>
+        <td><%= image_tag(pet.image_url, class: 'img-responsive') %></td>
         <td><%= pet.age_in_months %></td>
         <td><%= pet.description %></td>
         <td><%= link_to 'Show', pet %></td>
