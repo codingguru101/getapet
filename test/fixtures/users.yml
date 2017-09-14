@@ -2,10 +2,4 @@
 
 one:
   username: MyString
-  email: MyString
-  pets: 
-
-two:
-  username: MyString
-  email: MyString
-  pets: 
+  email: example2@nowhere.com
