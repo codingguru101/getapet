@@ -1,0 +1,49 @@
+h1 {
+	font-family: Papyrus, fantasy;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+.tblfont{
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  	font-size: 20px;
+  	font-style: normal;
+  	font-variant: normal;
+  	font-weight: 300;
+  	line-height: 15.4px;
+}
+html {
+  height: 100%;
+}
+h1 {text-align:center; margin:100px auto;
+font-weight:200;
+font-size:70px;}
+body {
+  font-family: 'Electrolize', sans-serif;
+  background:
+  -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+ -webkit-linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 45%, rgba(55, 230, 235, 1) 0%);
+}
+
+#signup{
+	text-align: right;
+	float:right;
+}
+#petcontainer{
+
+
+}
+.container {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+img {width: 100%}
+
+.container {
+    text-align: center;
+    padding: 10px 20px;
+}
