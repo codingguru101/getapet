@@ -58,3 +58,6 @@ gem "hirb", "~> 0.7.3"
 
 # Added at 2017-09-08 18:57:35 -0400 by wiz:
 gem "bootstrap", "~> 4.0.beta"
+
+# Added at 2017-09-13 22:08:10 -0400 by wiz:
+gem "bcrypt", "~> 3.1"
