@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <h1>GetaPet</h1>
-<%= link_to "Sign Up", signup_path, id:'signup' %>
 
 <table  class = "table">
   <thead>
@@ -22,10 +21,10 @@
         <td><%= pet.name %></td>
         <td><%= pet.species %></td>
         <td><%= pet.color %></td>
-        <td><%= link_to image_tag(pet.image_url, class: 'img-responsive'),pet %> </td>
+        <td><%= image_tag(pet.image_url, class: 'img-responsive') %></td>
         <td><%= pet.age_in_months %></td>
         <td><%= pet.description %></td>
-        <td></td>
+        <td><%= link_to 'Show', pet %></td>
         <!-- <td><%= link_to 'Edit', edit_pet_path(pet) %></td> -->
         <!-- <td><%= link_to 'Destroy', pet, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
       </tr>
