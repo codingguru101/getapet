@@ -18,6 +18,12 @@
   </head>
 
   <body>
+    <% if flash[:error].present? %>
+      <p class="flash-error"><%= flash.now[:error] %></p>
+    <% end %>
+    <% if flash[:notice].present? %>
+      <p class="flash-notice"><%= flash.now[:notice] %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>

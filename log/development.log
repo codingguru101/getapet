@@ -5179,3 +5179,98 @@ Completed 200 OK in 171ms (Views: 130.7ms | ActiveRecord: 5.1ms)
   [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
 >>>>>>> 00d7dedecb58a20581bfa00466e8f64a1ea02fb5
 >>>>>>> 0a6aa34925a075ddbcb70a79fb6f16c063b2f5eb
+Started GET "/sessions/new" for 127.0.0.1 at 2017-09-15 13:57:16 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (403.5ms)
+Completed 200 OK in 3004ms (Views: 2998.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-09-15 14:04:56 -0400
+  
+SyntaxError (/home/wiz/Desktop/wyncode/rails-basic/getapet/app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/login" for 127.0.0.1 at 2017-09-15 14:08:05 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/wiz/Desktop/wyncode/rails-basic/getapet/app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/sessions_controller.rb:18: syntax error, unexpected end-of-input, expecting keyword_end
+Started POST "/login" for 127.0.0.1 at 2017-09-15 14:09:17 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HqkjmCBhKcJhzUx5G8Vhv+4MIKdFDr+Y+Ps5qQVUIfctX3NXi99NVHxFZlog/6CfL4Dhg7rHhq01LC1pAzxDoA==", "session"=>{"email"=>"email@email.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "email@email.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (405.7ms)
+Completed 200 OK in 559ms (Views: 541.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-09-15 14:09:31 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Uz0K4MXa5OkNd+Qs0imYuFyiPqJg/lVupqa6r2O/uJ5gy1ovbmSAfxD/zg/pE1mYnS7/hp83bFtrca5vZdfayQ==", "session"=>{"email"=>"wrong@wrong.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wrong@wrong.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 64ms (Views: 57.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-09-15 14:19:49 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 84ms (Views: 75.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-09-15 14:20:47 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0li6MawsvwyNvaD3W++vy3D1UZ0uwYgjdxRstZVXCLfhrur+B5LbmpA1itRg1W7rsXmQudEIsRa6w3h1kz9q4A==", "session"=>{"email"=>"wrong@wrong.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "wrong@wrong.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 76ms (Views: 52.3ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-09-15 14:22:28 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vZTA51j6IpiP17hE4Y4P3L+CEMDvMGd8oXV6j+inFduOYpAo80RGDpJfkmfatM78fg7R5BD5Xklsom5P7s93jA==", "session"=>{"email"=>"fgrb@sdvgrvg.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fgrb@sdvgrvg.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 74ms (Views: 70.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-09-15 14:22:39 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 50ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-09-15 14:22:41 -0400
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 127ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-09-15 14:22:52 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8svmsAsn/omW0aFzVrUic+B9UDTto+sCZXphYws1RlrBPbZ/oJmaH4tZi1Btj+NTIfGREBJq0jeorXWjDV0kDQ==", "session"=>{"email"=>"tesgeg@rbrb.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tesgeg@rbrb.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 53.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-09-15 14:23:27 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T8G9juI6opwr6Lp4wVJlX3vTtc3BEG/KBh/4fuVhsvB8N+1BSYTGCjZgkFv6aKR/ul906T7ZVv/LyOy+4wnQpw==", "session"=>{"email"=>"fgrb@sdvgrvg.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fgrb@sdvgrvg.com"], ["LIMIT", 1]]
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 34.9ms | ActiveRecord: 0.9ms)
+
+
