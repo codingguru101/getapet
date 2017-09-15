@@ -8,16 +8,19 @@
 
 require 'csv'
 
-data = CSV.read("/Users/seanmcd/desktop/wyncode/getapet/db/seans_data.csv", { encoding: "UTF-8", headers: true, header_converters: :symbol, converters: :all})
+data = CSV.read(
+		"/Users/seanmcd/desktop/wyncode/getapet/db/seans_data.csv",
+		{ encoding: "UTF-8", headers: true, header_converters: :symbol, converters: :all}
+	)
 
 
 hashed_data = data.map { |item| item.to_hash }
 keys = [
-	:name, 
-	:species, 
-	:color, 
-	:image_url, 
-	:age_in_months, 
+	:name,
+	:species,
+	:color,
+	:image_url,
+	:age_in_months,
 	:description
 ]
 hashed_data.each do |item|
