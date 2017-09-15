@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20170908223601) do
     t.string "name"
     t.string "species"
     t.string "color"
-    t.string "@pet.image_url"
+    t.string "image_url"
     t.integer "age_in_months"
     t.text "description"
     t.datetime "created_at", null: false
