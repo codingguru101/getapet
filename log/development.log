@@ -5519,3 +5519,716 @@ Migrating to AddRememberDigestToUsers (20170915210425)
             WHERE name='index_users_on_email' AND type='index'
 [0m
 >>>>>>> master
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:08:10 -0400
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.1.3) lib/active_record/migration.rb:576:in `check_pending!'
+activerecord (5.1.3) lib/active_record/migration.rb:553:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.3) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.3) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.3) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.3) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.3) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.3) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.3) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.3) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20170913025750)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170913025750"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddIndexToUsersEmail (20170914020141)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170914020141"]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20170914020703)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170914020703"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddRememberDigestToUsers (20170915210425)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_digest" varchar[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170915210425"]]
+  [1m[35m (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:08:30 -0400
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (37.5ms)
+Completed 200 OK in 2068ms (Views: 2046.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-09-16 13:09:05 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (2.0ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 92ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-09-16 13:09:23 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 79ms (Views: 73.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets/1" for 127.0.0.1 at 2017-09-16 13:09:35 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPet Load (0.3ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 70ms (Views: 61.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:11:30 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 144ms (Views: 131.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:11:47 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 313ms (Views: 294.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:16:15 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 1116ms (Views: 1103.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:16:30 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 996ms (Views: 992.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:17:14 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (3.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 1215ms (Views: 1186.6ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:17:17 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 54ms (Views: 50.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:17:39 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 1052ms (Views: 1047.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:18:38 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 1158ms (Views: 1153.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:19:02 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:19:09 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 1281ms (Views: 1274.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/pets/2" for 127.0.0.1 at 2017-09-16 13:19:14 -0400
+Processing by PetsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPet Load (0.4ms)[0m  [1m[34mSELECT  "pets".* FROM "pets" WHERE "pets"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering pets/show.html.erb within layouts/application
+  Rendered pets/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 58ms (Views: 49.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:19:30 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 1324ms (Views: 1312.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:20:45 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (3.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (38.4ms)
+Completed 200 OK in 1410ms (Views: 1384.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:21:59 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (4.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (133.4ms)
+Completed 200 OK in 3032ms (Views: 3007.1ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:22:09 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (16.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (219.7ms)
+Completed 200 OK in 3099ms (Views: 3039.1ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:22:21 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (12.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (121.3ms)
+Completed 200 OK in 1892ms (Views: 1874.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:23:00 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (4.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 1606ms (Views: 1595.2ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:23:33 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 1070ms (Views: 1065.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:23:46 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 1093ms (Views: 1089.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:24:10 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (4.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 1232ms (Views: 1218.4ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:24:25 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 1146ms (Views: 1140.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:24:39 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 1241ms (Views: 1236.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:25:00 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 1528ms (Views: 1523.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:25:25 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (23.8ms)
+Completed 200 OK in 1731ms (Views: 1724.5ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:25:36 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 1345ms (Views: 1339.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:25:39 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 83ms (Views: 77.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:25:46 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (21.9ms)
+Completed 200 OK in 86ms (Views: 80.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:39:19 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (4.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 1436ms (Views: 1418.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:41:48 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (4.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 3006ms (Views: 2991.7ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:48:47 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (3.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (31.9ms)
+Completed 200 OK in 1260ms (Views: 1240.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:49:22 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (3.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (32.5ms)
+Completed 200 OK in 130ms (Views: 115.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:49:27 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 70ms (Views: 64.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:49:32 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 63ms (Views: 58.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:49:47 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 1294ms (Views: 1276.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:50:02 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:50:57 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 1120ms (Views: 1109.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:51:06 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (30.5ms)
+Completed 200 OK in 1190ms (Views: 1180.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:51:19 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 1053ms (Views: 1047.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:51:40 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 1019ms (Views: 1015.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:52:16 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 1068ms (Views: 1059.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:53:13 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 74ms (Views: 69.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:54:05 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 1343ms (Views: 1337.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:54:11 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 1391ms (Views: 1386.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:54:17 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 1344ms (Views: 1339.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:54:37 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 1210ms (Views: 1206.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:54:59 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (3.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 1520ms (Views: 1512.3ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:55:11 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 1088ms (Views: 1063.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:55:16 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 66ms (Views: 59.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:55:20 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (24.8ms)
+Completed 200 OK in 1240ms (Views: 1231.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:55:39 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 984ms (Views: 978.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:56:18 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 1107ms (Views: 1102.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:56:36 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.9ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 1181ms (Views: 1176.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:56:53 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (29.9ms)
+Completed 200 OK in 1417ms (Views: 1408.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:57:03 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.5ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 1026ms (Views: 1016.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:57:08 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 1111ms (Views: 1105.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:57:23 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (26.6ms)
+Completed 200 OK in 1306ms (Views: 1298.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:57:58 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 990ms (Views: 983.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:58:16 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.8ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 1224ms (Views: 1219.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:58:40 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 148ms (Views: 135.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:58:52 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (3.1ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (80.8ms)
+Completed 200 OK in 1452ms (Views: 1438.2ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 13:58:58 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 1084ms (Views: 1078.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:03:37 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (3.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (56.3ms)
+Completed 500 Internal Server Error in 1037ms (ActiveRecord: 3.6ms)
+
+
+  
+ActionView::Template::Error (CssSyntaxError: /Users/seanmcd/Desktop/wyncode/getapet/app/assets/stylesheets/style.css:26:2: Missed semicolon
+
+  24 |   font-family: 'Electrolize', sans-serif;
+  25 |   background:
+> 26 | 	color: white;
+     | 	^
+  27 | }
+  28 | 
+):
+    15: <!-- Latest compiled and minified JavaScript -->
+    16: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    17: 
+    18:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    19:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    20:   </head>
+    21: 
+  
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___2619325157206025339_70102025234040'
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:03:53 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 97ms (Views: 91.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:04:54 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (3.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (53.7ms)
+Completed 200 OK in 1545ms (Views: 1525.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:05:22 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 1123ms (Views: 1118.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:06:39 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.4ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 1139ms (Views: 1131.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:06:57 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.3ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 1247ms (Views: 1234.5ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:07:26 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (29.6ms)
+Completed 200 OK in 1599ms (Views: 1592.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:09:18 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.1ms)
+Completed 500 Internal Server Error in 961ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (CssSyntaxError: /Users/seanmcd/Desktop/wyncode/getapet/app/assets/stylesheets/style.css:27:90: Unknown word
+
+  25 |   background:
+  26 |   -webkit-linear-gradient(rgba(135, 60, 255, 1), rgba(135, 60, 255, 0.0) 0%),
+> 27 |  -webkit-linear-gradient(-45deg, rgba(120, 155, 255, 0.9) 45%, rgba(55, 230, 235, 1) 0%);*/
+     |                                                                                          ^
+  28 | }
+  29 | 
+):
+    15: <!-- Latest compiled and minified JavaScript -->
+    16: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    17: 
+    18:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    19:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    20:   </head>
+    21: 
+  
+app/views/layouts/application.html.erb:18:in `_app_views_layouts_application_html_erb___2619325157206025339_70102018740460'
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:09:31 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.6ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 117ms (Views: 113.4ms | ActiveRecord: 1.6ms)
+
+

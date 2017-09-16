@@ -1,3 +1,42 @@
 // Place all the styles related to the Pets controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.petcontainer {
+  position: relative;
+  margin-bottom: 10px;
+  transition: 1s;
+  &:hover {
+    transform: scale(1.1) rotate(1deg);
+    .description-container {
+      display: block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0 15px;
+      color: white;
+      opacity: 0.8;
+      background: black;
+      &:before {
+        content: '';
+        opacity: 1;
+      }
+    }
+  }
+  .column-img-container {
+    display: block;
+    img {
+      height: auto;
+
+    }
+  }
+  .description-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+  }
+}
