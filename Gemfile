@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem 'faker'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
 # Use sqlite3 as the database for Active Record
@@ -58,3 +58,6 @@ gem "hirb", "~> 0.7.3"
 
 # Added at 2017-09-08 18:57:35 -0400 by wiz:
 gem "bootstrap", "~> 4.0.beta"
+
+# Added at 2017-09-13 22:08:10 -0400 by wiz:
+gem "bcrypt", "~> 3.1"
