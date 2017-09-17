@@ -1,17 +1,19 @@
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
+
       <a href="#" class="navbar-brand"></a>
     </div>
     <div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href='#'Home></a></li>
+      <li class="active"><Home><img src="images/getapetlogo.png" alt="logo" class = "logo"></li>
       <li><a href="#">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
       <li id="signup"><%= link_to "Sign Up", signup_path, id:'signup' %></li>
-
+  
     </div>
     </nav>
     <link href = "style.css" />
@@ -20,11 +22,10 @@
     <h1> </h1>
 
 
-
     <div class ="container">
       <div class = "row">
       </div>
-      <% @pets.each do |pet| %>
+      <td class =><% @pets.each do |pet| %></td>
       <div class = "column">
         <div class="col-md-4" id = "petcontainer">
           <td><%= link_to image_tag(pet.image_url, class: 'img-responsive'),pet %> </td>
