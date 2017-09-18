@@ -1,23 +1,22 @@
 
-
     <p id="notice"><%= notice %></p>
 
     <h1> </h1>
 
 
     <div class ="container">
-      <div class = "row">
-      </div>
-      <td class =><% @pets.each do |pet| %></td>
-      <div class = "column">
-        <div class="col-md-4" id = "petcontainer">
-          <td><%= link_to image_tag(pet.image_url, class: 'img-responsive'),pet %> </td>
-          <td><%= pet.name %></td>
-
-        </div>
-
-      </div>
+      <% @pets.each do |pet| %>
+          <div class="col-md-4 petcontainer">
+            <div class="column-img-container">
+              <%= link_to image_tag(pet.image_url, class: 'img-responsive'),pet %>
+            </div>
+            <div class="description-container">
+              <h2><%= pet.name %></h2>
+              <p><%= pet.description %></p>
+            </div>
+          </div>
       <% end %>
+    </div>
 
 
 
