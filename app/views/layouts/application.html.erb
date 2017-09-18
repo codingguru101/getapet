@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Getapet</title>
+    <title>GetaPet</title>
     <%= csrf_meta_tags %>
-<!-- Cat Favicon -->
-<link rel="icon" type="image/png" href="/assets/favicon.png">
-
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<link href = "style.css" />
+    <!-- Cat Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href = "style.css" />
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
-
         <a href="#" class="navbar-brand"></a>
       </div>
-      <div>
+    <div>
       <ul class="nav navbar-nav">
-        <li><%= link_to image_tag("/images/getapetlogo.png", class: 'img-responsive'),home_path, id:'home' %></li>
-        <li id="signup"><%= link_to "Sign Up", signup_path, id:'signup' %></li>
-        <li><%= link_to "Log In", login_path , id:'login'%></li>
-
-      </div>
-      </nav>
-
-
-
-
+      <li><%= link_to image_tag("/images/getapetlogo.png", class: 'img-responsive'),home_path, id:'home' %></li>
+      <li id="signup"><%= link_to "Sign Up", signup_path, id:'signup' %></li>
+      <li><%= link_to "Log In", login_path , id:'login'%></li>
+    </div>
+  </nav>
 
   <body>
     <% if flash[:error].present? %>
