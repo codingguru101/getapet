@@ -19,7 +19,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="<%= request.fullpath == '/login' ? 'background-change' : '' %>">
     <% if flash[:error].present? %>
       <p class="flash-error"><%= flash.now[:error] %></p>
     <% end %>

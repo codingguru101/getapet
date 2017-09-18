@@ -1,3 +1,9 @@
+.social{
+}
+form{
+ color: white;
+ text-align: left;
+}
 h1 {
 	font-family: Papyrus, fantasy;
 	font-size: 24px;
@@ -41,3 +47,180 @@ img {width: 100%}
     text-align: center;
     padding: 10px 20px;
 }
+navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+color: #000;  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+color: white; /*BACKGROUND color for active*/
+background-color: #030033;
+}
+
+  .navbar-default {
+    background-color: #0f006f;
+    border-color: #030033;
+}
+
+
+ .nav > li > a:hover,
+ .nav > li > a:focus {
+    text-decoration: none;
+    background-color: silver; /*Change rollover cell color here*/
+  }
+
+
+  .navbar-default .navbar-nav > li > a {
+   color: orange; /*Change active text color here*/
+    }
+
+		* {
+		  font-family: 'Raleway', sans-serif;
+		}
+
+
+
+
+		.content {
+		  position: relative;
+		  width: 40rem;
+		  height: 75rem;
+		  background: rgba(0, 0, 0, 0.7);
+
+		}
+
+		.loginSocial {
+		  border-radius: 7.5px;
+		  border-color: white;
+		  border-style: solid;
+		  width: 25rem;
+			height: 5rem;
+		  margin-bottom: 5%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  opacity: 0.9;
+		  transition: opacity 0.2s ease;
+			font-family: Raleway, sans-serif;
+			font-size:26px;
+
+		}
+
+		.loginSocial:hover {
+		  opacity: 1;
+		}
+
+		#facebook {
+		  background: #3b5998;
+		  border-color: #3b5998;
+		}
+
+		#facebook:active{
+		  background:#2a4898;
+		  border-color:#2a4898;
+		}
+
+		#google {
+		  background: #db3236;
+		  border-color: #db3236;
+		  margin-top: 30%;
+		}
+
+
+		#google:active{
+		  background:#db0124;
+		  border-color:#db0124;
+		}
+
+		h1 {
+		  text-align: center;
+		  position: relative;
+		  top: 10px;
+		  width: 20%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  margin-top: auto;
+		  padding-top: 1rem;
+		  font-size: 2rem;
+		  font-weight: 200;
+		  color: white;
+		}
+
+		h2 {
+		  text-align: center;
+		  position: relative;
+		  width: 50%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  margin-top: 7.5%;
+		  font-size: 1.25rem;
+		  font-weight: 200;
+		  color: white;
+		}
+
+		p {
+		  text-align: center;
+		  position: relative;
+		  width: 50%;
+		  margin-left: auto;
+		  margin-right: auto;
+		  font-size: 0.9rem;
+		  font-weight: 200;
+		  color: white;
+		}
+
+		input {
+		  position: relative;
+		  left: 15%;
+		  width: 20rem;
+		  height: 2rem;
+		  margin-top: 1.5rem;
+		  margin-left: auto;
+		  margin-right: auto;
+		  opacity: 0.5;
+		  background: black;
+		  color: white;
+		  font-size: 0.9rem;
+		  padding: 5px;
+		  border-style: solid;
+		  border-width: 0.5px;
+		}
+
+		input:hover {
+		  background: #333333;
+		}
+
+		input:focus {
+		  background: white;
+		  opacity: 1;
+		  color: #343434;
+		}
+
+		button {
+		  position: relative;
+		  margin: 5% 15%;
+		  width: 20.7rem;
+		  height: 3.5rem;
+		  border-radius: 2px;
+		  border-style: none;
+		}
+
+		button:active {
+		  background: #888888;
+		  outline:none;
+		}
+
+		hr {
+		  border-color: #787878;
+		  width: 75%;
+		  margin-top: 10%;
+		  margin-bottom: 10%;
+		}
+
+		a {
+		  color: white;
+		  text-decoration: none;
+		}
+
+		a:hover {
+		  text-decoration: underline;
+		}
