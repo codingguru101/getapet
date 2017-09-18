@@ -29,11 +29,9 @@
       </div>
       <div>
       <ul class="nav navbar-nav">
-        <li class="active"><Home><img src="images/getapetlogo.png" alt="logo" class = "logo"></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><%= link_to image_tag("/images/getapetlogo.png", class: 'img-responsive'),home_path, id:'home' %></li>
         <li id="signup"><%= link_to "Sign Up", signup_path, id:'signup' %></li>
+        <li><%= link_to "Log In", login_path , id:'login'%></li>
 
       </div>
       </nav>
