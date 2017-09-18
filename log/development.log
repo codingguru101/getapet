@@ -6232,3 +6232,43 @@ Processing by PetsController#index as HTML
 Completed 200 OK in 117ms (Views: 113.4ms | ActiveRecord: 1.6ms)
 
 
+Started GET "/signup" for 127.0.0.1 at 2017-09-16 14:17:22 -0400
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (1.3ms)
+  Rendered users/new.html.erb within layouts/application (1175.3ms)
+Completed 200 OK in 1309ms (Views: 1227.9ms | ActiveRecord: 6.8ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:17:57 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (0.7ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (15.8ms)
+Completed 200 OK in 63ms (Views: 58.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-16 14:18:01 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (1.0ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 59ms (Views: 54.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-09-18 10:03:20 -0400
+  [1m[35m (5.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /usr/local/lib/ruby/gems/2.4.0/gems/railties-5.1.3/lib/rails/templates/rails/welcome/index.html.erb (6.6ms)
+Completed 200 OK in 36ms (Views: 17.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/pets" for 127.0.0.1 at 2017-09-18 10:03:27 -0400
+Processing by PetsController#index as HTML
+  Rendering pets/index.html.erb within layouts/application
+  [1m[36mPet Load (2.2ms)[0m  [1m[34mSELECT "pets".* FROM "pets"[0m
+  Rendered pets/index.html.erb within layouts/application (67.2ms)
+Completed 200 OK in 623ms (Views: 602.0ms | ActiveRecord: 4.0ms)
+
+
