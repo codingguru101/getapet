@@ -1,7 +1,7 @@
 .social{
 }
 form{
- color: white;
+ 
  text-align: left;
 }
 h1 {
@@ -31,10 +31,7 @@ h1 {
 	text-align: right;
 	float:right;
 }
-#petcontainer{
 
-
-}
 .container {
     width: 80%;
     background-color: white;

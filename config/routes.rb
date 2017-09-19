@@ -3,10 +3,11 @@ Rails.application.routes.draw do
   get 'home', to: 'pets#index'
   get 'sessions/new'
   get 'signup', to: 'users#new'
+  get 'profile', to: 'users#show'
   post '/signup',  to: 'users#create'
   get    '/login',   to: 'sessions#new'
   post   '/login',   to: 'sessions#create'
-  delete '/logout',  to: 'sessions#destroy'
+  get '/logout',  to: 'sessions#destroy'
   resources :pets
   resources :users
 
