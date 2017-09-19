@@ -1,7 +1,7 @@
 .social{
 }
 form{
- color: white;
+
  text-align: left;
 }
 h1 {
@@ -31,10 +31,7 @@ h1 {
 	text-align: right;
 	float:right;
 }
-#petcontainer{
 
-
-}
 .container {
     width: 80%;
     background-color: white;
@@ -74,7 +71,7 @@ img {width: 100%}
   li {
     overflow: auto;
     padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
+    border-bottom: 1px solid ;
   }
 }
 .petlogo{

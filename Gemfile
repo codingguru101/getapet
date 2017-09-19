@@ -5,13 +5,31 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'will_paginate',           '3.1.5'
+gem 'bootstrap-will_paginate', '1.0.0'
+#pagination
+
 gem 'omniauth', '~> 1.6', '>= 1.6.1'
 gem 'omniauth-facebook', '1.4.0'
+
 gem 'faker'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
+
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+#
+# group :development do
+#   gem 'sqlite3'
+# end
+
+gem 'pg'
+
+group :production do
+  # gem 'pg'
+  gem 'rails_12factor'
+end
+
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -58,8 +76,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Added at 2017-09-08 18:54:24 -0400 by wiz:
 gem "hirb", "~> 0.7.3"
 
-# Added at 2017-09-08 18:57:35 -0400 by wiz:
-gem "bootstrap", "~> 4.0.beta"
+
 
 # Added at 2017-09-13 22:08:10 -0400 by wiz:
 gem "bcrypt", "~> 3.1"
