@@ -1,7 +1,7 @@
 .social{
 }
 form{
- 
+
  text-align: left;
 }
 h1 {
@@ -71,6 +71,6 @@ img {width: 100%}
   li {
     overflow: auto;
     padding: 10px 0;
-    border-bottom: 1px solid $gray-lighter;
+    border-bottom: 1px solid ;
   }
 }
