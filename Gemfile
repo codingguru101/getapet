@@ -18,13 +18,15 @@ gem 'rails', '~> 5.1.3'
 
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
+#
+# group :development do
+#   gem 'sqlite3'
+# end
 
-group :development do
-  gem 'sqlite3'
-end
+gem 'pg'
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
   gem 'rails_12factor'
 end
 
