@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get '/', to: 'pets#index'
+  get root, to: 'pets#index'
   get 'home', to: 'pets#index'
   get 'sessions/new'
   get 'signup', to: 'users#new'
