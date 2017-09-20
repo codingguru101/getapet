@@ -10,17 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(version: 20170919204036) do
+=======
 ActiveRecord::Schema.define(version: 20170919212413) do
+>>>>>>> master
 
   create_table "pets", force: :cascade do |t|
     t.string "name"
-    t.string "species"
-    t.string "color"
+    t.string "animal"
+    t.string "mix"
     t.string "image_url"
-    t.integer "age_in_months"
+    t.integer "age"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "shelter_id"
+    t.string "shelter_pet_id"
+    t.string "sex"
+    t.string "size"
+    t.string "status"
+    t.string "contact"
   end
 
   create_table "users", force: :cascade do |t|

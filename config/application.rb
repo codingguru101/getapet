@@ -14,5 +14,12 @@ module Getapet
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    Petfinder.configure do |config|
+      config.api_key = '9bfe192afe71cc77e1a529703540ba73'
+      config.api_secret = '25f3b4e40efba6ea2106ee643241b700'
+    end
+
+    
   end
 end
