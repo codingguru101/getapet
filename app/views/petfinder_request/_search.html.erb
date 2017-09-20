@@ -1,3 +1,5 @@
+<%= render '/layouts/header' %>
+
 <%= form_tag petfinder_search_path, method: 'get' do %>Zip Code:
 
   <%= text_field_tag :search,params[:search],{placeholder: 'enter your zip code here', class: 'searchfield', required:true} %>
