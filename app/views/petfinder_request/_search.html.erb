@@ -1,0 +1,5 @@
+<%= form_tag petfinder_search_path, method: 'get' do %>Parameters:
+
+  <%= text_field_tag :search,params[:search],{placeholder: 'enter your zip code here', class: 'searchfield', required:true} %>
+  <%= submit_tag 'Search', class: 'search-btn'%>
+  <% end %>

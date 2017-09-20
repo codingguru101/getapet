@@ -1,0 +1,14 @@
+<%= render 'search' %>
+<div class ="container">
+  <% if @response %>
+  <% @response.each do |pet| %>
+        <div class="description-container">
+          <h2><%= pet.name %></h2>
+          <p><%= pet.description %></p>
+  <p>  <%= link_to image_tag(pet.photos.first.small, class: 'img-responsive') %> </p>
+        </div>
+  <% end %>
+  <% else %>
+  <%="no results found" %>
+  <% end %>
+</div>
