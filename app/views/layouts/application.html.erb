@@ -16,24 +16,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <a href="#" class="navbar-brand"></a>
-      </div>
-    <div>
-      <ul class="nav navbar-nav">
-      <li><%= link_to image_tag("/images/getapetlogo.png", class: 'img-responsive'),petfinder_search_path, id:'home' %></li>
-      <% if !logged_in? %>
-        <li id="signup"><%= link_to "Sign Up", signup_path, id:'signup' %></li>
-       <li><%= link_to "Log In", login_path , id:'login'%></li>
-      <%else %>
-        <li id="profile"><%= link_to "#{current_user.username}", profile_path %></li>
-        <li id="signout"><%= link_to "Log Out", logout_path %></li>
-      <%end%>
-    </div>
-  </nav>
 
 
 

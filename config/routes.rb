@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   post '/signup',  to: 'users#create'
 
   get '/logout',  to: 'sessions#destroy'
+<<<<<<< HEAD
   get 'petfinder/search', to: 'petfinder_request#index'
   post 'petfinder/search', to: 'petfinder_request#index'
   get 'results', to: 'petfinder_request#index'
@@ -22,6 +23,14 @@ get 'home', to: 'pets#index'
 
 
 
+=======
+  root 'users#new'
+get 'users/new'
+
+get 'auth/:provider/callback' => 'sessions#create'
+get 'auth/facebook', as: 'facebook_login'
+get 'logout' => 'sessions#destroy'
+>>>>>>> master
   resources :pets
   resources :users
 

@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20170919204036) do
+=======
+ActiveRecord::Schema.define(version: 20170919212413) do
+>>>>>>> master
 
   create_table "pets", force: :cascade do |t|
     t.string "name"
@@ -37,6 +41,7 @@ ActiveRecord::Schema.define(version: 20170919204036) do
     t.string "password_digest"
     t.string "remember_digest"
     t.boolean "admin", default: false
+    t.string "facebook_id"
     t.index ["email"], name: "index_users_on_email", unique: true
   end
 
