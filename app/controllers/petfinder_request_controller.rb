@@ -12,7 +12,7 @@ class PetfinderRequestController < ApplicationController
       query = nil
       # redirect_to results_path
     else
-      redirect_to login_path
+      redirect_to login_path, notice: "You must login to make a search"
     end
   end
 
