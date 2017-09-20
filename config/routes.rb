@@ -13,9 +13,6 @@ Rails.application.routes.draw do
   post 'petfinder/search', to: 'petfinder_request#index'
   get 'results', to: 'petfinder_request#index'
 
-
-
-
 get 'home', to: 'pets#index'
 
 
