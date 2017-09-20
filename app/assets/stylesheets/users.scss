@@ -1,3 +1,24 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#brower-container{
+display: inline-block;
+width: 70%;
+height: 600px;
+
+}
+
+#browse{
+  margin-left: 47%;
+  margin-top: 283px;
+}
+.content{
+  display: inline-block;
+  width: 30%;
+}
+.fb-button{
+  a{
+    text-decoration: none;
+    color: white;
+  }
+}

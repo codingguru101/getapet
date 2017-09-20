@@ -1,51 +1,56 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title></title>
-</head>
 
-<body class="content">
+  <div class="content">
 
-  <div class = "social">
-    <h1>Log in</h1>
-    <hr>
-  </div>
-  <div class="loginSocial" id = "google">
-    <p>  Login using Google<p>
-    </div>
-    <div class="loginSocial" id = "facebook">
-      <p>Login using Facebook</p>
-    </div>
-    <h2>Or log in via Email</h2>
-
-
-    <div class="row">
-    </div>
-    <div class="col-md-6 col-md-offset-3">
-
-        <% provide(:title, "Log in") %>
-
-        <%= form_for(:session, url: login_path) do |f| %>
-        <%= f.label :email %>
-
-        <%= f.email_field :email, class: 'form-control' %>
-
-        <%= f.label :password %>
-        <%= f.password_field :password, class: 'form-control' %>
-
-      <!-- <%= f.label :remember_me, class: "checkbox inline" do %>
-        <%= f.check_box :remember_me %>
-        <span>Remember me on this computer</span>
-      <% end %> -->
-
-      <%= f.submit "Log in", class: "btn btn-primary" %>
-    <% end %>
-
-
+    <div class = "social">
       <hr>
-      <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+      <h2 id= "center">Login</h2>
     </div>
-  </div>
-</body>
-</html>
+    <div class="loginSocial" id = "google">
+      <p>  Login using Google<p>
+      </div>
+      <!-- <div class="loginSocial" id = "facebook"> -->
+        <button type="button" class="btn btn-primary fb-button">
+        <% if current_user %>
+        <%= current_user.username %>  signed in!<br>
+        <%= link_to "Sign out", logout_path %>
+        <% else %>
+
+        <%= link_to "Sign in with facebook", facebook_login_path %><br>
+        <% end %>
+      </button>
+      <!-- </div> -->
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3">
+
+            <% provide(:title, "Log in") %>
+
+            <%= form_for(:session, url: login_path) do |f| %>
+            <%= f.label :email %>
+
+            <%= f.email_field :email, class: 'form-control' %>
+
+            <%= f.label :password %>
+            <%= f.password_field :password, class: 'form-control' %>
+
+            <!-- <%= f.label :remember_me, class: "checkbox inline" do %>
+            <%= f.check_box :remember_me %>
+            <span>Remember me on this computer</span>
+            <% end %> -->
+
+            <%= f.submit "Log in", class: "btn btn-primary" %>
+            <% end %>
+
+
+            <hr>
+            <p>New user? <%= link_to "Sign up now!", signup_path %></p>
+          </div>
+
+        </div>
+
+
+    </div>
+    <div id='brower-container'>
+      <form method="get" action="/">
+      <button type="submit" class="btn btn-success" id="browse">Browse Pets</button>
+    </form>
+    </div>

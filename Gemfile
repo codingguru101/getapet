@@ -5,12 +5,13 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+
 gem 'will_paginate',           '3.1.5'
 gem 'bootstrap-will_paginate', '1.0.0'
 #pagination
 
-gem 'omniauth', '~> 1.6', '>= 1.6.1'
-gem 'omniauth-facebook', '1.4.0'
+# gem 'omniauth', '~> 1.6', '>= 1.6.1'
+gem 'omniauth-facebook'
 
 gem 'faker'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
