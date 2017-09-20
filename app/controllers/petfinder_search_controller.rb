@@ -1,2 +1,0 @@
-class PetfinderSearchController < ApplicationController
-end
