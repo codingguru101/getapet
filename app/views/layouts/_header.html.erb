@@ -8,7 +8,7 @@
       </div>
     <div>
       <ul class="nav navbar-nav">
-      <li><%= link_to image_tag("/images/getapetlogo.png", class: 'img-responsive'),home_path, id:'home' %></li>
+      <li><%= link_to image_tag("/images/getapetlogo.png", class: 'img-responsive'),results_path, id:'home' %></li>
       <% if !logged_in? %>
         <li id="signup"><%= link_to "Sign Up", signup_path, id:'signup' %></li>
        <li><%= link_to "Log In", login_path , id:'login'%></li>
