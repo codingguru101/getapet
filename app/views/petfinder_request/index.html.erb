@@ -2,19 +2,22 @@
 <div class ="container">
 
   <% if @response %>
-    <% @response.each do |pet| %>
-      <%next if !pet.photos.any? %>
-      <div class = "column">
-        <div class="col-md-4" class= "petcontainer">
-            <h2><%= pet.name %></h2>
-            <p> <%= link_to image_tag(pet.photos.first.medium, class: 'img-responsive') %> </p>
-            <p><%= pet.description %></p>
-            <p><%= pet.contact %></p>
-
-          </div>
-        </div>
-        <% end %>
+  <% @response.each do |pet| %>
+  <%next if !pet.photos.any? %>
+  <div class = "column">
+    <div class="col-md-4" class= "petcontainer">
+      <div class="column-img-container">
+        <p> <%= link_to image_tag(pet.photos.first.medium, class: 'img-responsive') %> </p>
+      </div>
+      <div class="description-container">
+        <h2><%= pet.name %></h2>
+        <p><%= pet.description %></p>
+        <p><%= pet.contact %></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
   <% else %>
-    <%="no results found" %>
+  <%="no results found" %>
   <% end %>
 </div>
