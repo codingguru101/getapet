@@ -93,7 +93,7 @@ img {width: 100%}
     border-radius: 7.5px;
     border-color: white;
     border-style: solid;
-    width: 15rem;
+    width: 17.5rem;
     margin-bottom: 0%;
     margin-left: auto;
     margin-right: auto;
@@ -129,4 +129,8 @@ img {width: 100%}
   html {
     background: url(http://i.huffpost.com/gen/1374225/images/o-THINGS-HAPPY-PEOPLE-DO-facebook.jpg)
 
+  }
+
+  #nb{
+    margin-left: 6em;
   }
