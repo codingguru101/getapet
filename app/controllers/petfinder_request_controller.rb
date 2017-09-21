@@ -4,11 +4,8 @@ class PetfinderRequestController < ApplicationController
   def search
     if logged_in?
       query = params[:search]
-<<<<<<< HEAD
-      arg = ["cat"]
-=======
       arg = params[:animal]
->>>>>>> 9da62d85c6d14ae3e67eae7e3caacd64a8e97405
+
       # query = "33014"
       @petfinder = Petfinder::Client.new
       @response = @petfinder.find_pets(arg, query)
