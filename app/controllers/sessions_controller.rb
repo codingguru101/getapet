@@ -1,6 +1,14 @@
 class SessionsController < ApplicationController
+  # login
+  def create
+    # omniauth middleware stores oauth data in the request.env instead of params
+    auth = request.env["omniauth.auth"]
 
-  def new
+    # even though this is a login action, an OAuth login can be a login *or* a registration
+    #
+    # if the user exists, log her in
+    # if the user doesn't exist, create her, then log her in
+    user = User.find_by(facebook_id: auth['uid']) || User.create_from_facebook(auth)
   end
 
   def create
@@ -13,11 +21,14 @@ class SessionsController < ApplicationController
       flash[:error] = 'Invalid email/password combination'
       render 'new'
     end
+    session[:user_id] = user.id
+    redirect_to root_url, notice: "Signed in!"
   end
 
-  def destroy
-     log_out if logged_in?
-     redirect_to '/'
-   end
 
+  # logout
+  def destroy
+    reset_session
+    redirect_to root_url, notice: "Signed out!"
+  end
 end

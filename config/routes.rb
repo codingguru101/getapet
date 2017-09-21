@@ -13,15 +13,18 @@ Rails.application.routes.draw do
   post 'petfinder/search', to: 'petfinder_request#index'
   get 'results', to: 'petfinder_request#index'
 
-
-
-
 get 'home', to: 'pets#index'
 
 
 
 
 
+  root 'users#new'
+get 'users/new'
+
+get 'auth/:provider/callback' => 'sessions#create'
+get 'auth/facebook', as: 'facebook_login'
+get 'logout' => 'sessions#destroy'
   resources :pets
   resources :users
 

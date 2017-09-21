@@ -8,7 +8,16 @@ class User < ApplicationRecord
                       uniqueness: {case_sensitive: false}
   has_secure_password
   validates :password, presence: true, length: {minimum:6}, allow_nil: true
+  # validates :name, presence: true
 
+  def self.create_from_facebook(auth)
+    User.create!(
+      facebook_id: auth['uid'],
+      username: auth['info']['name'],
+      email: auth['info']['email'],
+      password: SecureRandom.hex(10)
+    )
+  end
   def User.new_token
      SecureRandom.urlsafe_base64
   end
